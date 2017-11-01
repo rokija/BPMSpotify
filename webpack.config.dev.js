@@ -95,7 +95,7 @@ export default {
         ]
       },
       {
-        test: /(\.css|\.scss|\.sass)$/,
+        test: /(\.css|\.less)$/,
         exclude: /node_modules/,
         use: [
           'style-loader',
@@ -113,9 +113,9 @@ export default {
               sourceMap: true
             }
           }, {
-            loader: 'sass-loader',
+            loader: 'less-loader',
             options: {
-              includePaths: [path.resolve(__dirname, 'src', 'scss')],
+              includePaths: [path.resolve(__dirname, 'src', 'less')],
               sourceMap: true
             }
           }
