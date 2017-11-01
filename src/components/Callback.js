@@ -4,8 +4,6 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { getAuth, validateCallbackResult, getUserData } from '../actions/authActions';
 
-
-//TODO: save token in cookies
 class Callback extends Component {
 
     constructor() {
@@ -41,7 +39,7 @@ class Callback extends Component {
 
 Callback.propTypes = {
     dispatch: PropTypes.func,
-    authReducer: PropTypes.func,
+    authReducer: PropTypes.object,
     userLoginState: PropTypes.object
 };
 

@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
 class HomePage extends Component {
 
     componentWillMount() {
-        const {authReducer } = this.props;
-        if (authReducer.isLogged) {
+        let tokenData = cookies.get('access_token');
+
+        if (tokenData) {
             // this.context.router.history.push("/");
+            return true;
         }
         else {
             this.context.router.history.push("/login");
@@ -24,23 +27,10 @@ class HomePage extends Component {
 }
 
 
-HomePage.propTypes = {
-    dispatch: PropTypes.func,
-    authReducer: PropTypes.func,
-    userLoginState: PropTypes.object
-};
-
 HomePage.contextTypes = {
     router: PropTypes.object
 };
 
-function mapStateToProps (state) {
-    const {authReducer} = state;
-    return {
-        authReducer
-    };
-}
-
-export default connect(mapStateToProps, null)(HomePage);
+export default HomePage;
 
 

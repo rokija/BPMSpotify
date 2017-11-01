@@ -1,29 +1,24 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import PropTypes from "prop-types";
-import { bindActionCreators } from "redux";
-import { getAuth } from '../actions/authActions';
+import Cookies from 'universal-cookie';
 import '../styles/about-page.css';
+const cookies = new Cookies();
 
 class AboutPage extends Component {
     constructor() {
         super();
 
-        this.logIn = this.logIn.bind(this);
     }
 
     componentWillMount() {
-        const {authReducer } = this.props;
-        if (authReducer.isLogged) {
+        const tokenData = cookies.get('access_token');
+
+        if (tokenData) {
             // this.context.router.history.push("/");
         }
         else {
             this.context.router.history.push("/login");
         }
-    }
-
-    logIn = () => {
-        this.props.dispatch(getAuth());
     }
 
 
@@ -36,27 +31,10 @@ class AboutPage extends Component {
     }
 }
 
-AboutPage.propTypes = {
-    dispatch: PropTypes.func,
-    authReducer: PropTypes.func,
-    userLoginState: PropTypes.object
-};
 
 AboutPage.contextTypes = {
     router: PropTypes.object
 };
 
-function mapStateToProps (state) {
-    const {authReducer} = state;
-    return {
-        authReducer
-    };
-}
-function mapDispatchToProps (dispatch) {
-    return {
-        dispatch,
-        actions: bindActionCreators({getAuth}, dispatch)
-    };
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(AboutPage);
+export default AboutPage;

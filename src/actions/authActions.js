@@ -1,6 +1,8 @@
 import axios from 'axios';
-import Storage from "../core/Storage";
 import * as types from '../constants/actionTypes';
+import Cookies from 'universal-cookie';
+
+const cookies = new Cookies();
 
 let token_ttl = "900000";
 
@@ -17,16 +19,6 @@ client.settings = {
     scopes: ['user-follow-modify user-follow-read user-library-read user-top-read user-read-private user-read-email'],
     redirect_uri: 'http://localhost:3000/callback'
 };
-
-
-// function session() {
-//     if (sessionStorage.token) {
-//         client.token = sessionStorage.token;
-//     } else if (window.location.hash.split('&')[0].split('=')[1]) {
-//         sessionStorage.token = window.location.hash.split('&')[0].split('=')[1];
-//         client.token = sessionStorage.token;
-//     }
-// }
 
 // let url = `https://accounts.spotify.com/authorize/?client_id=${client_id}&response_type=code&redirect_uri=${redirect_url}&scope=user-read-private%20user-read-email&state=34fFs29kd09&${scopes}&scope=${encodeURIComponent(scopes)}&redirect_uri=${encodeURIComponent(redirect_url)}`
 //
@@ -113,11 +105,11 @@ export function validateCallbackResult(locationHash){
                     expires_in = token_ttl && token_ttl.length ? token_ttl : splitValue[1] * 1000;
                     tokenStorage.expires_in = +expires_in;
 
-                    // //Delete token after expires_in time
-                    // deleteTokenTimeout = setTimeout(function(){
-                    //     Storage.removeItem(authConstants.ACCESS_TOKEN_KEY);
-                    //     clearTimeout(deleteTokenTimeout);
-                    // }, tokenStorage.expires_in);
+                    //Delete token after expires_in time
+                    let deleteTokenTimeout = setTimeout(function(){
+                        cookies.set('token', '', { path: '/' });
+                        clearTimeout(deleteTokenTimeout);
+                    }, tokenStorage.expires_in);
 
                     tokenStorage[splitValue[0]] = expires_in;
                 } else {
@@ -131,7 +123,12 @@ export function validateCallbackResult(locationHash){
                     tokenStorage.expiry_time = dateNow + Number(tokenStorage.expires_in);
                 }
                 tokenStorage = JSON.stringify(tokenStorage);
-                Storage.setItem("access_token", tokenStorage);
+                // Storage.setItem("access_token", tokenStorage);
+
+                cookies.set("access_token", tokenStorage, {
+                    path: '/',
+                    expires: tokenStorage.expiry_time
+                });
             }
 
             return dispatch({
@@ -159,12 +156,12 @@ export function getUserDataError(error) {
 }
 
 export function getUserData(){
-    let tokenData = Storage.getItem(types.ACCESS_TOKEN),
+    let tokenData = cookies.get('access_token'),
+    // let tokenData = Storage.getItem(types.ACCESS_TOKEN),
         request;
-
-    if(tokenData){
-        tokenData = JSON.parse(tokenData);
-    }
+    // if(tokenData){
+    //     tokenData = JSON.parse(tokenData);
+    // }
 
     // let requestBody = "token=" + tokenData.access_token;
 
@@ -187,4 +184,3 @@ export function getUserData(){
         });
     };
 }
-
