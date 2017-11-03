@@ -6,7 +6,8 @@ export const ACCESS_TOKEN = 'access_token';
 export const USER_DATA = 'USER_DATA';
 export const USER_DATA_ERROR = 'USER_DATA_ERROR';
 
-
-
+export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';
+export const SEARCH_ERROR = 'SEARCH_ERROR';
+export const SET_SEARCH_TERM = 'SET_SEARCH_TERM';
 
 

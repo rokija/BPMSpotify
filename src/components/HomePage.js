@@ -6,7 +6,7 @@ const cookies = new Cookies();
 class HomePage extends Component {
 
     componentWillMount() {
-        let tokenData = cookies.get('access_token');
+        let tokenData = cookies.get('token');
 
         if (tokenData) {
             // this.context.router.history.push("/");

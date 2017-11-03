@@ -11,7 +11,7 @@ class AboutPage extends Component {
     }
 
     componentWillMount() {
-        const tokenData = cookies.get('access_token');
+        const tokenData = cookies.get('token');
 
         if (tokenData) {
             // this.context.router.history.push("/");

@@ -4,11 +4,7 @@ import Cookies from 'universal-cookie';
 
 const cookies = new Cookies();
 
-let token_ttl = "900000";
-
-//TODO: save token in cookies
-
-import {Client} from 'spotify-sdk';
+import { Client } from 'spotify-sdk';
 
 let client = Client.instance;
 
@@ -80,11 +76,7 @@ export function validateCallbackResult(locationHash){
     return (dispatch) => {
         let currentLocationHash = locationHash,
             modifiedHash = currentLocationHash.replace("#",""),
-            splitHash = modifiedHash.split("&"),
-            tokenStorage = {},
-            dateNow = Date.now(),
-            expires_in,
-            iterations = 0;
+            splitHash = modifiedHash.split("&");
 
         if(splitHash[0].indexOf("error=") !== -1){
             return dispatch({
@@ -96,41 +88,15 @@ export function validateCallbackResult(locationHash){
         }
 
         if(splitHash[0].indexOf("access_token=") !== -1){
-            //for (const value of splitHash){
             for(let i = 0, ilen = splitHash.length; i < ilen; i++){
                 let splitValue = splitHash[i].split("=");
 
-                if(splitValue[0] === "expires_in"){
-                    splitValue[1] = +splitValue[1];
-                    expires_in = token_ttl && token_ttl.length ? token_ttl : splitValue[1] * 1000;
-                    tokenStorage.expires_in = +expires_in;
-
-                    //Delete token after expires_in time
-                    let deleteTokenTimeout = setTimeout(function(){
-                        cookies.set('token', '', { path: '/' });
-                        clearTimeout(deleteTokenTimeout);
-                    }, tokenStorage.expires_in);
-
-                    tokenStorage[splitValue[0]] = expires_in;
-                } else {
-                    tokenStorage[splitValue[0]] = splitValue[1];
+                if(splitValue[0] === "access_token") {
+                    cookies.set("token", splitValue[1], {
+                        path: '/',
+                    });
                 }
-                ++iterations;
             }
-
-            if(iterations === splitHash.length){
-                if(!tokenStorage.expiry_time){
-                    tokenStorage.expiry_time = dateNow + Number(tokenStorage.expires_in);
-                }
-                tokenStorage = JSON.stringify(tokenStorage);
-                // Storage.setItem("access_token", tokenStorage);
-
-                cookies.set("access_token", tokenStorage, {
-                    path: '/',
-                    expires: tokenStorage.expiry_time
-                });
-            }
-
             return dispatch({
                 type: types.LOG_IN_SUCCESS,
                 payload: {
@@ -156,9 +122,10 @@ export function getUserDataError(error) {
 }
 
 export function getUserData(){
-    let tokenData = cookies.get('access_token'),
+    let tokenData = cookies.get('token'),
     // let tokenData = Storage.getItem(types.ACCESS_TOKEN),
         request;
+
     // if(tokenData){
     //     tokenData = JSON.parse(tokenData);
     // }
@@ -168,7 +135,7 @@ export function getUserData(){
     request = axios({
         method: 'get',
         headers: {
-            'Authorization': 'Bearer ' + tokenData.access_token,
+            'Authorization': 'Bearer ' + tokenData,
             'Accept':'application/json',
             "Content-Type": "application/x-www-form-urlencoded"
         },
@@ -177,9 +144,10 @@ export function getUserData(){
 
     return (dispatch) => {
         return request.then((response) => {
-            // console.log(response)
+            // console.log(response);
             dispatch(getUserDataSuccess(response, types.USER_DATA));
         }).catch((error) => {
+            // console.log(error)
             dispatch(getUserDataError(error, types.USER_DATA_ERROR));
         });
     };

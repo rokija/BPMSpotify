@@ -16,6 +16,7 @@ export default {
     }
   },
   auth: {
-    loggedIn: true
-  }
+    loggedIn: false
+  },
+  searchTerm: ''
 };

@@ -6,6 +6,7 @@ import AboutPage from './AboutPage';
 import NotFoundPage from './NotFoundPage';
 import Callback from './Callback';
 import LoginPage from '../containers/LoginPage';
+import Search from '../containers/Search';
 
 class App extends React.Component {
   render() {
@@ -18,11 +19,14 @@ class App extends React.Component {
           <NavLink to="/about" activeStyle={activeStyle}>Demo App</NavLink>
           {' | '}
           <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
+            {' | '}
+            <NavLink to="/search" activeStyle={activeStyle}>Search</NavLink>
         </div>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/callback" component={Callback} />
           <Route path="/about" component={AboutPage} />
+          <Route path="/search" component={Search} />
           <Route path="/login" component={LoginPage} />
           <Route component={NotFoundPage} />
         </Switch>
