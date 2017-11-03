@@ -6,7 +6,7 @@ import AboutPage from './AboutPage';
 import NotFoundPage from './NotFoundPage';
 import Callback from './Callback';
 import LoginPage from '../containers/LoginPage';
-import Search from '../containers/Search';
+import Search from '../components/Search';
 
 class App extends React.Component {
   render() {

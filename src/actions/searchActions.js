@@ -14,7 +14,7 @@ export function setSearchTerm(searchTerm) {
 
 export function searchSuccess(track) {
     return {
-        type: types.SEARCH_SUCCESS,
+        type: types.SET_SEARCH_TERM,
         payload: track
     };
 }
@@ -38,22 +38,22 @@ export function getSearchResults(value){
             'Accept':'application/json',
             "Content-Type": "application/x-www-form-urlencoded"
         },
-        url: `https://api.spotify.com/v1/search?q=${value}&type=track`
+        url: `https://api.spotify.com/v1/search?q=${value}&type=track,artist`
     });
 
-    return {
-        type: types.SET_SEARCH_TERM,
-        payload: request
-    };
-
-    // return (dispatch) => {
-    //     return request.then((response) => {
-    //         console.log(response)
-    //         dispatch(searchSuccess(response, types.SEARCH_SUCCESS));
-    //     }).catch((error) => {
-    //         dispatch(searchError(error, types.SEARCH_ERROR));
-    //     });
+    // return {
+    //     type: types.SET_SEARCH_TERM,
+    //     payload: request
     // };
+
+    return (dispatch) => {
+        return request.then((response) => {
+            // console.log(response)
+            dispatch(searchSuccess(response, types.SET_SEARCH_TERM));
+        }).catch((error) => {
+            dispatch(searchError(error, types.SEARCH_ERROR));
+        });
+    };
 }
 
 

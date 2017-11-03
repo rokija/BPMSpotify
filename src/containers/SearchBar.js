@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import { getSearchResults } from '../actions/searchActions';
 import '../styles/about-page.css';
 
-class Search extends Component {
+class SearchBar extends Component {
     constructor() {
         super();
 
@@ -44,13 +44,13 @@ class Search extends Component {
 }
 
 
-Search.propTypes = {
+SearchBar.propTypes = {
     dispatch: PropTypes.func,
     searchTerm: PropTypes.string,
     getSearchResults: PropTypes.func,
 };
 
-Search.contextTypes = {
+SearchBar.contextTypes = {
     router: PropTypes.object
 };
 
@@ -59,4 +59,4 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({ getSearchResults }, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(Search);
+export default connect(null, mapDispatchToProps)(SearchBar);

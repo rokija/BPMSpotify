@@ -1,15 +1,13 @@
 import {SEARCH_SUCCESS, SEARCH_ERROR, SET_SEARCH_TERM} from '../constants/actionTypes';
 
-const DEFAULT_STATE = {
-    searchTerm: 'ssdss'
-};
 
-export default function searchReducer(state = DEFAULT_STATE, action) {
+export default function searchReducer(state = [], action) {
     const {payload} = action;
 
     switch (action.type) {
         case SET_SEARCH_TERM:
-            return Object.assign({}, state, { searchTerm: action.payload });
+            // console.log([ action.payload.data, ...state ])
+            return [ action.payload.data, ...state ];
         case SEARCH_SUCCESS:
             return Object.assign({}, state, payload);
         case SEARCH_ERROR:

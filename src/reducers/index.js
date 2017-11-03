@@ -9,7 +9,7 @@ const rootReducer = combineReducers({
   authReducer,
   userReducer,
   audioReducer,
-  searchReducer,
+  search: searchReducer,
   routing: routerReducer
 });
 
