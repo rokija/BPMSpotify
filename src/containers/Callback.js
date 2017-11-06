@@ -2,9 +2,9 @@ import { Component } from 'react';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { getAuth, validateCallbackResult, getUserData } from '../actions/authActions';
+import { getAuth, validateCallbackResult } from '../actions/authActions';
 
-class Callback extends Component {
+export class Callback extends Component {
 
     constructor() {
         super();
@@ -17,8 +17,8 @@ class Callback extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        const {authReducer, dispatch} = nextProps;
-        dispatch(getUserData());
+        const {authReducer} = nextProps;
+        // dispatch(getUserData());
         if(!authReducer || Object.keys(authReducer).length === 0 && authReducer.constructor === Object){
              // console.log("NOTT")
             // return null;
@@ -26,6 +26,7 @@ class Callback extends Component {
 
         if(authReducer.isLogged) {
             this.context.router.history.push("/");
+            return true;
         } else {
             // console.log("errrr")
             // this.context.router.push("/errorPage");
@@ -47,18 +48,17 @@ Callback.contextTypes = {
     router: PropTypes.object
 };
 
-function mapStateToProps (state) {
-    const {authReducer, userReducer} = state;
+export function mapStateToProps (state) {
+    const {authReducer} = state;
     return {
-        authReducer,
-        userReducer
+        authReducer
     };
 }
 
-function mapDispatchToProps (dispatch) {
+export function mapDispatchToProps (dispatch) {
     return {
         dispatch,
-        actions: bindActionCreators({getAuth, validateCallbackResult, getUserData}, dispatch)
+        actions: bindActionCreators({getAuth, validateCallbackResult}, dispatch)
     };
 }
 

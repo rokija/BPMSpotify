@@ -1,31 +1,213 @@
 /* Variables */
-@vin-blue: #5bb7db;
-@vin-green: #60b044;
-@vin-red: #ff0000;
+@gray_hover: #f9f9f9;
+@base-green: #abd8c0;
 
 /* Styles */
 body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 14px 'Robotic', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
   color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
-  margin: 0 auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   font-weight: 300;
 }
 
-td {
-	padding: 12px;
+.login-page-wrapper {
+  position: absolute;
+  top: 10em;
+  left: 35%;
+  .spotify-icon-black {
+    background-image: url("../assets/Spotify_Logo_RGB_Black.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 120%;
+    left: 20%;
+  }
+  .login-button {
+    position: absolute;
+    left: 40%;
+    top: 250%;
+    border-radius: 60px;
+    border: none;
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+    &focus {
+      outline: none;
+    }
+  }
 }
 
-h2 {
-	color: @vin-blue;
+.base-container {
+  .header-container {
+    background-color: @base-green;
+    height: 113px;
+    position: fixed;
+    width: 100%;
+  }
 }
 
-.savings { color: @vin-green; }
-.loss { color: @vin-red; }
-input.small { width: 46px; }
-td.fuel-savings-label { width: 175px; }
+.before-tracklist-wrapper {
+  text-align: center;
+  position: relative;
+  top: 15em;
+  .before-tracklist {
+    font-size: 20px;
+  }
+}
+
+.home-page-wrapper {
+  position: absolute;
+  background-image: url("../assets/brandon-zack-425780.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  height: 100%;
+}
+
+.link-to-search-page-wrapper {
+  .link-to-search-page {
+    margin-top: 10em;
+    margin-left: 45%;
+    color: white;
+    background-color: rgba(171, 216, 192, 0.52);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    span {
+      position: relative;
+      top: 2em;
+      font-size: 20px;
+      left: 1.5em;
+    }
+  }
+  .link-to-search-page:hover {
+    text-decoration: none;
+  }
+}
+.search-page {
+  position: absolute;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.search-input-wrapper {
+  width: 100%;
+}
+.search-input {
+  margin-top: 3em;
+  padding: 10px;
+  width: 90%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-button {
+  padding: 10px;
+  color: @base-green;
+  background-color: white;
+  &hover {
+    outline: none;
+    color: #004444;
+  }
+  &focus {
+    outline: none;
+  }
+}
+
+.search-results-container {
+  background-color: white;
+  padding: 2em;
+  border: solid 0.5px gainsboro;
+  margin: 2em 0 2em 0;
+  width: 100%;
+  &:hover {
+    background-color: @gray_hover;
+  }
+}
+
+.album-image {
+  margin-right: 2em;
+  border: solid 0.5px gainsboro;
+  height: 60px;
+  width: 60px;
+}
+
+.track-name {
+  margin-top: 2em;
+}
+
+.key-container,
+.bpm-container,
+.duration-container {
+  margin-top: 2.2em;
+}
+
+.bpm-label,
+.duration-label {
+  margin-top: 2em;
+}
+
+.bpm-number,
+.duration-number {
+  font-size: 30px;
+}
+
+/* animation */
+
+.arrow-up {
+  position: fixed;
+  left: 45%;
+  top: 36%;
+  font-size: 100px;
+  color: @base-green;
+  -webkit-animation:slide 4s infinite;
+  -moz-animation:slide 4s infinite;
+  animation:slide 4s infinite;
+}
+
+
+@-webkit-keyframes slide{
+  0%, 30% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 30px;
+  }
+
+  25% {
+    margin-top: -80px;
+  }
+}
+@-moz-keyframes slide{
+  0%, 30% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 30px;
+  }
+
+  25% {
+    margin-top: -80px;
+  }
+}
+
+@keyframes slide{
+  0%, 30% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 30px;
+  }
+
+  25% {
+    margin-top: -80px;
+  }
+}

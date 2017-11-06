@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import { getAuth } from '../actions/authActions';
 import '../styles/about-page.css';
 
-class LoginPage extends Component {
+export class LoginPage extends Component {
     constructor() {
         super();
 
@@ -22,17 +22,16 @@ class LoginPage extends Component {
         }
     }
 
-    logIn = () => {
+    logIn() {
         this.props.dispatch(getAuth());
+        return true;
     }
 
     render() {
         return (
-            <div>
-                <h2 className="alt-header">Please Log in</h2>
-                <p>
-                    <button onClick={() => this.logIn()}>Log in</button>
-                </p>
+            <div className="login-page-wrapper">
+                <h2>Please Log in with <div className="spotify-icon-black" /></h2>
+                <button className="login-button" onClick={() => this.logIn()}>Log in</button>
             </div>
         );
     }
@@ -40,7 +39,7 @@ class LoginPage extends Component {
 
 LoginPage.propTypes = {
     dispatch: PropTypes.func,
-    authReducer: PropTypes.func,
+    authReducer: PropTypes.object,
     userLoginState: PropTypes.object
 };
 
@@ -48,13 +47,13 @@ LoginPage.contextTypes = {
     router: PropTypes.object
 };
 
-function mapStateToProps (state) {
+export function mapStateToProps (state) {
     const {authReducer} = state;
     return {
         authReducer
     };
 }
-function mapDispatchToProps (dispatch) {
+export function mapDispatchToProps (dispatch) {
     return {
         dispatch,
         actions: bindActionCreators({getAuth}, dispatch)
