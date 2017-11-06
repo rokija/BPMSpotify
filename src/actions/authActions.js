@@ -44,15 +44,13 @@ export function getAuth() {
             client.login().then((url) => {
             window.location.href = url;
               axios({
-                    url,
+                  url,
                   method: 'get'
-        }).then((response) => {
-            // console.log(response);
-            dispatch(logInSucc(response, types.LOG_IN_SUCCESS));
-        }).catch((error) => {
-            // console.log(error)
-            dispatch(Error(error, types.LOG_IN_ERROR));
-        });
+            }).then((response) => {
+                dispatch(logInSucc(response, types.LOG_IN_SUCCESS));
+            }).catch((error) => {
+                dispatch(Error(error, types.LOG_IN_ERROR));
+            });
         });
     };
 }
@@ -90,7 +88,11 @@ export function validateCallbackResult(locationHash){
         if(splitHash[0].indexOf("access_token=") !== -1){
             for(let i = 0, ilen = splitHash.length; i < ilen; i++){
                 let splitValue = splitHash[i].split("=");
-
+                let expirationTime;
+                if(splitValue[0] === "expires_in") {
+                    expirationTime = splitValue[1];
+                    setTokenDeleteTimeout(expirationTime);
+                }
                 if(splitValue[0] === "access_token") {
                     cookies.set("token", splitValue[1], {
                         path: '/',
@@ -106,6 +108,16 @@ export function validateCallbackResult(locationHash){
         }
     };
 }
+
+export function setTokenDeleteTimeout(expirationTime) {
+    let deleteTokenTimeout = setTimeout(() => {
+        cookies.set("token", '', {
+            path: '/',
+        });
+        clearTimeout(deleteTokenTimeout);
+    }, expirationTime);
+}
+
 
 export function getUserDataSuccess(response) {
     return {
@@ -123,14 +135,7 @@ export function getUserDataError(error) {
 
 export function getUserData(){
     let tokenData = cookies.get('token'),
-    // let tokenData = Storage.getItem(types.ACCESS_TOKEN),
         request;
-
-    // if(tokenData){
-    //     tokenData = JSON.parse(tokenData);
-    // }
-
-    // let requestBody = "token=" + tokenData.access_token;
 
     request = axios({
         method: 'get',
@@ -152,3 +157,4 @@ export function getUserData(){
         });
     };
 }
+

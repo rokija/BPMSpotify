@@ -6,10 +6,9 @@ const cookies = new Cookies();
 class HomePage extends Component {
 
     componentWillMount() {
-        let tokenData = cookies.get('token');
+        const tokenData = cookies.get('token');
 
         if (tokenData) {
-            // this.context.router.history.push("/");
             return true;
         }
         else {

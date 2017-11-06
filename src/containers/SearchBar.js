@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { getSearchResults } from '../actions/searchActions';
 import '../styles/about-page.css';
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
 class SearchBar extends Component {
     constructor() {
@@ -17,14 +19,27 @@ class SearchBar extends Component {
         this.onFormSubmit = this.onFormSubmit.bind(this);
     }
 
+    componentWillMount() {
+        const tokenData = cookies.get('token');
+
+        if (tokenData) {
+            return true;
+        }
+        else {
+            this.context.router.history.push("/login");
+        }
+    }
+
     onInputChange(event) {
         this.setState({ term: event.target.value });
     }
 
     onFormSubmit(event) {
+        const {getSearchResults, setSearchQuery} = this.props;
         event.preventDefault();
 
-        this.props.getSearchResults(this.state.term);
+        getSearchResults(this.state.term);
+        setSearchQuery(this.state.term);
         this.setState({ term: '' });
     }
 
@@ -48,6 +63,7 @@ SearchBar.propTypes = {
     dispatch: PropTypes.func,
     searchTerm: PropTypes.string,
     getSearchResults: PropTypes.func,
+    setSearchQuery: PropTypes.func,
 };
 
 SearchBar.contextTypes = {

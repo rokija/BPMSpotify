@@ -8,7 +8,7 @@ import { routerReducer } from 'react-router-redux';
 const rootReducer = combineReducers({
   authReducer,
   userReducer,
-  audioReducer,
+  audioFeatures: audioReducer,
   search: searchReducer,
   routing: routerReducer
 });

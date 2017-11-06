@@ -40,7 +40,7 @@ class LoginPage extends Component {
 
 LoginPage.propTypes = {
     dispatch: PropTypes.func,
-    authReducer: PropTypes.func,
+    authReducer: PropTypes.object,
     userLoginState: PropTypes.object
 };
 
