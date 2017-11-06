@@ -46,12 +46,16 @@ class SearchBar extends Component {
     render() {
         return (
             <div>
-                <form>
+                <form className="search-input-wrapper">
                     <input
+                        className="search-input"
                         placeholder="Search a song"
                         value={this.state.term}
                         onChange={this.onInputChange} />
-                    <button onClick={this.onFormSubmit} type="submit" >Search</button>
+                    <button
+                        className="search-button btn btn-info glyphicon glyphicon-search"
+                        onClick={this.onFormSubmit}
+                        type="submit" />
                 </form>
             </div>
         );

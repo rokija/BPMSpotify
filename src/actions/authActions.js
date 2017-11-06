@@ -74,7 +74,8 @@ export function validateCallbackResult(locationHash){
     return (dispatch) => {
         let currentLocationHash = locationHash,
             modifiedHash = currentLocationHash.replace("#",""),
-            splitHash = modifiedHash.split("&");
+            splitHash = modifiedHash.split("&"),
+            dateNow = Date.now();
 
         if(splitHash[0].indexOf("error=") !== -1){
             return dispatch({
@@ -91,7 +92,7 @@ export function validateCallbackResult(locationHash){
                 let expirationTime;
                 if(splitValue[0] === "expires_in") {
                     expirationTime = splitValue[1];
-                    setTokenDeleteTimeout(expirationTime);
+                    setTokenDeleteTimeout(expirationTime, dateNow);
                 }
                 if(splitValue[0] === "access_token") {
                     cookies.set("token", splitValue[1], {
@@ -109,13 +110,16 @@ export function validateCallbackResult(locationHash){
     };
 }
 
-export function setTokenDeleteTimeout(expirationTime) {
+export function setTokenDeleteTimeout(expirationTime, dateNow) {
+    dateNow = dateNow > 0 ? dateNow : Date.now();
+    let expireTokenAfterMillis = +expirationTime*1000 - dateNow;
+    // console.log(expireTokenAfterMillis);
     let deleteTokenTimeout = setTimeout(() => {
         cookies.set("token", '', {
             path: '/',
         });
         clearTimeout(deleteTokenTimeout);
-    }, expirationTime);
+    }, expireTokenAfterMillis);
 }
 
 

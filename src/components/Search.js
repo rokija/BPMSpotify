@@ -20,7 +20,7 @@ export default class Search extends Component {
 
     render() {
         return (
-            <div>
+            <div className="search-page">
                 <Searchbar setSearchQuery={this.setSearchQuery} />
                 <TrackList searchQuery={this.state.searchQuery}/>
             </div>

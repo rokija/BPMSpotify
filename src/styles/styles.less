@@ -1,31 +1,71 @@
 /* Variables */
-@vin-blue: #5bb7db;
-@vin-green: #60b044;
-@vin-red: #ff0000;
+@gray_hover: #f9f9f9;
 
 /* Styles */
 body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 14px 'Robotic', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
   color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
-  margin: 0 auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   font-weight: 300;
 }
-
-td {
-	padding: 12px;
+.track-view {
+  .main {
+    border: none !important;
+  }
 }
 
-h2 {
-	color: @vin-blue;
+.search-page {
+  width: 70%;
+  margin-left: 15%;
 }
 
-.savings { color: @vin-green; }
-.loss { color: @vin-red; }
-input.small { width: 46px; }
-td.fuel-savings-label { width: 175px; }
+.search-input-wrapper {
+  width: 100%;
+}
+.search-input {
+  margin-top: 3em;
+  padding: 10px;
+  width: 90%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-button {
+  padding: 10px;
+}
+
+.search-results-container {
+  padding: 2em;
+  border: solid 0.5px gainsboro;
+  margin: 2em 0 2em 0;
+  width: 100%;
+  &:hover {
+    background-color: @gray_hover;
+  }
+}
+
+.album-image {
+  margin-right: 2em;
+  border: solid 0.5px gainsboro;
+  height: 60px;
+  width: 60px;
+}
+
+.track-artist {
+
+}
+
+.track-name {
+  margin-top: 2em;
+}
+
+.bpm-label,
+.duration-label {
+  margin-top: 2em;
+}
+
+.bpm-number,
+.duration-number {
+  font-size: 30px;
+}
