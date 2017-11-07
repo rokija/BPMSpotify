@@ -58,6 +58,7 @@ class TrackList extends Component {
         let renderItems = audioFeaturesList.map((featureItem) => {
             return trackItems.map((trackItems,index) => {
                 if(featureItem.id === trackItems.id) {
+
                     return (
                         <div className="container search-results-container" key={'trackItem-' + index}>
                             <div>
@@ -67,24 +68,33 @@ class TrackList extends Component {
                                 </div>
                                 <div className="col-md-1 pull-right">
                                     <PieChart
-                                        size={100}
-                                        innerHoleSize={50}
+                                        styles={{
+                                            '.pie-chart-label': {
+                                                fontFamily: 'helvetica',
+                                                fontSize: '1em',
+                                                fill: 'white',
+                                                transform: 'translate(45, 38)'
+                                            }
+                                        }}
+                                        labels
+                                        size={80}
+                                        innerHoleSize={40}
                                         data={[
-                                            { value: trackItems.popularity, color: 'blue' },
+                                            { key: trackItems.popularity, value: trackItems.popularity, color: '#abd8c0' },
                                             { value: 100 - trackItems.popularity, color: 'transparent', stroke: 'none'}
                                         ]}
                                     />
                                     <span className="col-md-12 bpm-label">popularity</span>
                                 </div>
-                                <div className="col-md-1 pull-right">
+                                <div className="col-md-1 pull-right key-container">
                                     <span className="col-md-12 bpm-number">{featureItem.key}</span>
                                     <span className="col-md-12 bpm-label">key</span>
                                 </div>
-                                <div className="col-md-1 pull-right">
+                                <div className="col-md-1 pull-right bpm-container">
                                     <span className="col-md-12 bpm-number">{featureItem.tempo.toFixed()}</span>
                                     <span className="col-md-12 bpm-label">BPM</span>
                                 </div>
-                                <div className="col-md-1 pull-right">
+                                <div className="col-md-1 pull-right duration-container">
                                     <span className="col-md-12 duration-number">{this.millisToMinutesAndSeconds(featureItem.duration_ms)}</span>
                                     <span className="col-md-12 duration-label" >duration</span>
                                 </div>

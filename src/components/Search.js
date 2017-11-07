@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Searchbar from '../containers/SearchBar';
 import TrackList from '../containers/TrackList';
+import BeforeTrackList from './BeforeTrackList';
 
 export default class Search extends Component {
     constructor(){
@@ -22,7 +23,7 @@ export default class Search extends Component {
         return (
             <div className="search-page">
                 <Searchbar setSearchQuery={this.setSearchQuery} />
-                <TrackList searchQuery={this.state.searchQuery}/>
+                { this.state.searchQuery === '' ? <BeforeTrackList /> : <TrackList searchQuery={this.state.searchQuery}/> }
             </div>
         );
     }

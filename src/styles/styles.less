@@ -1,5 +1,6 @@
 /* Variables */
 @gray_hover: #f9f9f9;
+@base-green: #abd8c0;
 
 /* Styles */
 body {
@@ -8,13 +9,27 @@ body {
   color: #4d4d4d;
   font-weight: 300;
 }
-.track-view {
-  .main {
-    border: none !important;
+
+.base-container {
+  .header-container {
+    background-color: @base-green;
+    height: 113px;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+.before-tracklist-wrapper {
+  text-align: center;
+  position: relative;
+  top: 10em;
+  .before-tracklist {
+    font-size: 20px;
   }
 }
 
 .search-page {
+  position: absolute;
   width: 70%;
   margin-left: 15%;
 }
@@ -33,9 +48,19 @@ body {
 
 .search-button {
   padding: 10px;
+  color: @base-green;
+  background-color: white;
+  &hover {
+    outline: none;
+    color: #004444;
+  }
+  &focus {
+    outline: none;
+  }
 }
 
 .search-results-container {
+  background-color: white;
   padding: 2em;
   border: solid 0.5px gainsboro;
   margin: 2em 0 2em 0;
@@ -52,12 +77,14 @@ body {
   width: 60px;
 }
 
-.track-artist {
-
-}
-
 .track-name {
   margin-top: 2em;
+}
+
+.key-container,
+.bpm-container,
+.duration-container {
+  margin-top: 4.8em;
 }
 
 .bpm-label,

@@ -53,7 +53,7 @@ class SearchBar extends Component {
                         value={this.state.term}
                         onChange={this.onInputChange} />
                     <button
-                        className="search-button btn btn-info glyphicon glyphicon-search"
+                        className="search-button btn glyphicon glyphicon-search"
                         onClick={this.onFormSubmit}
                         type="submit" />
                 </form>
