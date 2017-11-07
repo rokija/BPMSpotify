@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import { bindActionCreators } from "redux";
-import {PieChart} from 'react-easy-chart';
+import PieChart from 'react-minimal-pie-chart';
 import { getAudioFeatures } from '../actions/audioActions';
 
 class TrackList extends Component {
@@ -68,20 +68,13 @@ class TrackList extends Component {
                                 </div>
                                 <div className="col-md-1 pull-right">
                                     <PieChart
-                                        styles={{
-                                            '.pie-chart-label': {
-                                                fontFamily: 'helvetica',
-                                                fontSize: '1em',
-                                                fill: 'white',
-                                                transform: 'translate(45, 38)'
-                                            }
-                                        }}
-                                        labels
-                                        size={80}
-                                        innerHoleSize={40}
+                                        lineWidth={40}
+                                        rounded={true}
+                                        animate={true}
+                                        size={100}
                                         data={[
-                                            { key: trackItems.popularity, value: trackItems.popularity, color: '#abd8c0' },
-                                            { value: 100 - trackItems.popularity, color: 'transparent', stroke: 'none'}
+                                            { value: 100 - trackItems.popularity, color: 'transparent' },
+                                            { key: trackItems.popularity, value: trackItems.popularity, color: '#abd8c0' }
                                         ]}
                                     />
                                     <span className="col-md-12 bpm-label">popularity</span>

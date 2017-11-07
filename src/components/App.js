@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Switch, NavLink, Route } from 'react-router-dom';
 import HomePage from './HomePage';
 import NotFoundPage from './NotFoundPage';
-import Callback from './Callback';
+import Callback from '../containers/Callback';
 import LoginPage from '../containers/LoginPage';
 import Search from '../components/Search';
 

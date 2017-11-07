@@ -10,7 +10,7 @@
     "npm": ">=3"
   },
   "scripts": {
-    "start": "npm-run-all --parallel test:watch open:src lint:watch",
+    "start": "npm-run-all --parallel open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
@@ -26,22 +26,19 @@
   "license": "MIT",
   "dependencies": {
     "axios": "0.17.0",
-    "d3": "^3.5.17",
-    "d3-array": "^0.8.1",
-    "d3-scale": "^0.9.3",
-    "d3-shape": "^0.7.1",
-    "d3-time-format": "^2.1.0",
+    "axios-mock-adapter": "^1.9.0",
     "less": "2.7.2",
     "less-loader": "4.0.5",
-    "react": "^15.6.2",
+    "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
-    "react-dom": "^15.6.2",
-    "react-easy-chart": "^0.3.0",
+    "react-dom": "^16.0.0",
     "react-faux-dom": "^2.7.1",
+    "react-minimal-pie-chart": "^3.0.1",
     "react-redux": "5.0.5",
     "react-router-dom": "4.2.2",
     "react-router-redux": "5.0.0-alpha.6",
     "redux": "3.6.0",
+    "redux-mock-store": "^1.3.0",
     "redux-thunk": "2.1.0",
     "spotify-sdk": "1.0.0-beta2",
     "universal-cookie": "^2.1.0"
@@ -76,7 +73,7 @@
     "history": "4.6.0",
     "html-webpack-plugin": "2.29.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "^20.1.0-alpha.3",
+    "jest": "^20.1.0-echo.1",
     "jest-cli": "20.0.4",
     "json-loader": "0.5.4",
     "npm-run-all": "4.0.2",
@@ -120,11 +117,20 @@
       "raf/polyfill",
       "./tools/enzymeTestAdapterSetup.js"
     ],
+    "roots": [
+      "<rootDir>/src/"
+    ],
     "collectCoverage": true,
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/_mocks_/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "src/webpack-public-path.js",
+      "src/store/",
+      "tools/"
     ],
     "coverageReporters": [
       "lcov"

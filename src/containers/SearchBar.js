@@ -7,7 +7,7 @@ import '../styles/about-page.css';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
-class SearchBar extends Component {
+export class SearchBar extends Component {
     constructor() {
         super();
 
@@ -75,7 +75,7 @@ SearchBar.contextTypes = {
 };
 
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
     return bindActionCreators({ getSearchResults }, dispatch);
 }
 
