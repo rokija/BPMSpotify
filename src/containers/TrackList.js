@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import PieChart from 'react-minimal-pie-chart';
 import { getAudioFeatures } from '../actions/audioActions';
 
-class TrackList extends Component {
+export class TrackList extends Component {
     constructor() {
         super();
 
@@ -62,38 +62,40 @@ class TrackList extends Component {
                     return (
                         <div className="container search-results-container" key={'trackItem-' + index}>
                             <div>
-                                <div className="col-md-8">
+                                <div className="col-md-6 col-xs-12">
                                     <iframe src={`https://open.spotify.com/embed?uri=${trackItems.uri}&theme=white`}
                                             width="350" height="80" frameBorder="0" allowTransparency="true"/>
                                 </div>
-                                <div className="col-md-1 pull-right">
-                                    <PieChart
-                                        lineWidth={40}
-                                        rounded={true}
-                                        animate={true}
-                                        size={100}
-                                        data={[
-                                            { value: 100 - trackItems.popularity, color: 'transparent' },
-                                            { key: trackItems.popularity, value: trackItems.popularity, color: '#abd8c0' }
-                                        ]}
-                                    />
-                                    <span className="col-md-12 bpm-label">popularity</span>
-                                </div>
-                                <div className="col-md-1 pull-right key-container">
-                                    <span className="col-md-12 bpm-number">{featureItem.key}</span>
-                                    <span className="col-md-12 bpm-label">key</span>
-                                </div>
-                                <div className="col-md-1 pull-right bpm-container">
-                                    <span className="col-md-12 bpm-number">{featureItem.tempo.toFixed()}</span>
-                                    <span className="col-md-12 bpm-label">BPM</span>
-                                </div>
-                                <div className="col-md-1 pull-right duration-container">
-                                    <span className="col-md-12 duration-number">{this.millisToMinutesAndSeconds(featureItem.duration_ms)}</span>
-                                    <span className="col-md-12 duration-label" >duration</span>
+                                <div className="col-md-6 col-xs-12">
+                                    <div className="pie-chart-container col-md-2 col-xs-2 pull-right">
+                                        <PieChart
+                                            lineWidth={40}
+                                            rounded={true}
+                                            animate={true}
+                                            data={[
+                                                { value: 100 - trackItems.popularity, color: 'transparent' },
+                                                { key: trackItems.popularity, value: trackItems.popularity, color: '#abd8c0' }
+                                            ]}
+                                        />
+                                        <span className="col-md-12 bpm-label">popularity</span>
+                                    </div>
+                                    <div className="col-md-3 col-xs-3 pull-right key-container">
+                                        <span className="col-md-12 bpm-number">{featureItem.key}</span>
+                                        <span className="col-md-12 bpm-label">key</span>
+                                    </div>
+                                    <div className="col-md-3 col-xs-3 pull-right bpm-container">
+                                        <span className="col-md-12 bpm-number">{featureItem.tempo.toFixed()}</span>
+                                        <span className="col-md-12 bpm-label">BPM</span>
+                                    </div>
+                                    <div className="col-md-3 col-xs-3 pull-right duration-container">
+                                        <span className="col-md-12 duration-number">{this.millisToMinutesAndSeconds(featureItem.duration_ms)}</span>
+                                        <span className="col-md-12 duration-label" >duration</span>
+                                    </div>
+                                    <div className="col-md-1 col-xs-1" />
                                 </div>
                             </div>
                             <div>
-                                <div className="col-md-12">
+                                <div className="col-md-12 col-xs-12">
                                     <span>Preview</span>
                                     <audio controls>
                                         <source src={trackItems.preview_url} type="audio/mp3"/>
@@ -123,14 +125,14 @@ TrackList.propTypes = {
     searchQuery: PropTypes.string,
 };
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
     return {
         dispatch,
         actions: bindActionCreators({ getAudioFeatures }, dispatch)
     };
 }
 
-function mapStateToProps({ search, audioFeatures }) {
+export function mapStateToProps({ search, audioFeatures }) {
     return { search, audioFeatures };
 }
 
