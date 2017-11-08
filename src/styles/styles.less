@@ -12,6 +12,31 @@ body {
 
 .login-page-wrapper {
   position: absolute;
+  top: 10em;
+  left: 35%;
+  .spotify-icon-black {
+    background-image: url("../assets/Spotify_Logo_RGB_Black.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 120%;
+    left: 20%;
+  }
+  .login-button {
+    position: absolute;
+    left: 40%;
+    top: 250%;
+    border-radius: 60px;
+    border: none;
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+    &focus {
+      outline: none;
+    }
+  }
 }
 
 .base-container {
@@ -26,7 +51,7 @@ body {
 .before-tracklist-wrapper {
   text-align: center;
   position: relative;
-  top: 10em;
+  top: 15em;
   .before-tracklist {
     font-size: 20px;
   }
@@ -47,7 +72,7 @@ body {
     margin-top: 10em;
     margin-left: 45%;
     color: white;
-    background-color: @base-green;
+    background-color: rgba(171, 216, 192, 0.52);
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -58,9 +83,9 @@ body {
       font-size: 20px;
       left: 1.5em;
     }
-    &hover {
-      text-decoration: none !important;
-    }
+  }
+  .link-to-search-page:hover {
+    text-decoration: none;
   }
 }
 .search-page {
@@ -130,4 +155,59 @@ body {
 .bpm-number,
 .duration-number {
   font-size: 30px;
+}
+
+/* animation */
+
+.arrow-up {
+  position: fixed;
+  left: 45%;
+  top: 36%;
+  font-size: 100px;
+  color: @base-green;
+  -webkit-animation:slide 4s infinite;
+  -moz-animation:slide 4s infinite;
+  animation:slide 4s infinite;
+}
+
+
+@-webkit-keyframes slide{
+  0%, 30% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 30px;
+  }
+
+  25% {
+    margin-top: -80px;
+  }
+}
+@-moz-keyframes slide{
+  0%, 30% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 30px;
+  }
+
+  25% {
+    margin-top: -80px;
+  }
+}
+
+@keyframes slide{
+  0%, 30% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 30px;
+  }
+
+  25% {
+    margin-top: -80px;
+  }
 }

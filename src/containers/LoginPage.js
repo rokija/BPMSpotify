@@ -30,10 +30,8 @@ export class LoginPage extends Component {
     render() {
         return (
             <div className="login-page-wrapper">
-                <h2 className="alt-header">Please Log in</h2>
-                <p>
-                    <button onClick={() => this.logIn()}>Log in</button>
-                </p>
+                <h2>Please Log in with <div className="spotify-icon-black" /></h2>
+                <button className="login-button" onClick={() => this.logIn()}>Log in</button>
             </div>
         );
     }
