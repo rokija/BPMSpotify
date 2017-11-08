@@ -12,7 +12,8 @@ export class SearchBar extends Component {
         super();
 
         this.state = {
-            term: ''
+            term: '',
+            errorMessage: ''
         };
 
         this.onInputChange = this.onInputChange.bind(this);
@@ -31,22 +32,27 @@ export class SearchBar extends Component {
     }
 
     onInputChange(event) {
-        this.setState({ term: event.target.value });
+        this.setState({ term: event.target.value, errorMessage: '' });
     }
 
     onFormSubmit(event) {
         const {getSearchResults, setSearchQuery} = this.props;
         event.preventDefault();
 
-        getSearchResults(this.state.term);
-        setSearchQuery(this.state.term);
-        this.setState({ term: '' });
+        if (this.state.term !== '') {
+            getSearchResults(this.state.term);
+            setSearchQuery(this.state.term);
+            this.setState({ term: '' });
+        }
+        else {
+            this.setState({ errorMessage: 'please write a song or an artist name in the input' });
+        }
     }
 
     render() {
         return (
-            <div>
-                <form className="search-input-wrapper">
+            <div className="search-bar-wrapper">
+                <form className="col-md-12 col-xs-12 search-input-wrapper">
                     <input
                         className="search-input"
                         placeholder="Search a song"
@@ -57,6 +63,7 @@ export class SearchBar extends Component {
                         onClick={this.onFormSubmit}
                         type="submit" />
                 </form>
+                <span className="col-md-12 col-xs-12 error-message-input">{this.state.errorMessage}</span>
             </div>
         );
     }

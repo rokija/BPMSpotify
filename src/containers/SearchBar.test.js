@@ -50,6 +50,13 @@ describe('SearchBar', () => {
         });
 
         it('calls onFormSubmit', () => {
+            wrapperInstance.setState({ term: 'value' });
+            wrapperInstance.onFormSubmit({preventDefault: () => {}});
+            expect(wrapperInstance.state.term).toEqual('');
+        });
+
+        it('calls onFormSubmit with no input value', () => {
+            wrapperInstance.setState({ term: '' });
             wrapperInstance.onFormSubmit({preventDefault: () => {}});
             expect(wrapperInstance.state.term).toEqual('');
         });

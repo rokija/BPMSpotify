@@ -20,7 +20,6 @@ class HomePage extends Component {
     render() {
         return (
             <div className="home-page-wrapper">
-                <h2>Helloo</h2>
                 <div className="link-to-search-page-wrapper">
                     <Link className="link-to-search-page" to="/search"><span>Enter</span></Link>
                 </div>

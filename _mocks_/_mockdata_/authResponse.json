@@ -1,0 +1,46 @@
+{
+  "data":{
+    "client":{
+      "name":"bpm matching app"
+    },
+    "country":"LV",
+    "locales":[
+      "lv_LV",
+      "lv",
+      "en_US",
+      "en"
+    ],
+    "BON":[
+      "0",
+      "0",
+      -1640118408
+    ]
+  },
+  "status":200,
+  "statusText":"OK",
+  "headers":{
+    "pragma":"no-cache",
+    "content-type":"application/json",
+    "cache-control":"no-cache, no-store, must-revalidate"
+  },
+  "config":{
+    "transformRequest":{
+
+    },
+    "transformResponse":{
+
+    },
+    "timeout":0,
+    "xsrfCookieName":"XSRF-TOKEN",
+    "xsrfHeaderName":"X-XSRF-TOKEN",
+    "maxContentLength":-1,
+    "headers":{
+      "Accept":"application/json, text/plain, */*"
+    },
+    "method":"get",
+    "url":"https://accounts.spotify.com/authorize/?client_id=fedf859105a2482d8cfb9c2347a9305c&response_type=token&redirect_uri=http://localhost:3000/callback&scope=user-follow-modify user-follow-read user-library-read user-top-read user-read-private user-read-email&state=34fFs29kd09&&redirect_uri=http://localhost:3000/callback"
+  },
+  "request":{
+
+  }
+}
