@@ -25,7 +25,7 @@ export class Callback extends Component {
         }
 
         if(authReducer.isLogged) {
-            this.context.router.history.push("/");
+            this.context.router.history.push("/search");
             return true;
         } else {
             // console.log("errrr")

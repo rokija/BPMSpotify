@@ -66,7 +66,7 @@ export class TrackList extends Component {
                                     <iframe src={`https://open.spotify.com/embed?uri=${trackItems.uri}&theme=white`}
                                             width="350" height="80" frameBorder="0" allowTransparency="true"/>
                                 </div>
-                                <div className="col-md-6 col-xs-12">
+                                <div className="song-data-wrapper col-md-6 col-xs-12">
                                     <div className="pie-chart-container col-md-2 col-xs-2 pull-right">
                                         <PieChart
                                             lineWidth={40}
@@ -96,7 +96,7 @@ export class TrackList extends Component {
                             </div>
                             <div>
                                 <div className="col-md-12 col-xs-12">
-                                    <span>Preview</span>
+                                    <span className="preview-track">Preview</span>
                                     <audio controls>
                                         <source src={trackItems.preview_url} type="audio/mp3"/>
                                         Your browser does not support the audio element.

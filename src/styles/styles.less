@@ -1,6 +1,7 @@
 /* Variables */
 @gray_hover: #f9f9f9;
 @base-green: #abd8c0;
+@primary_font: "Helvetica Neue";
 
 /* Styles */
 body {
@@ -53,7 +54,8 @@ body {
   position: relative;
   top: 15em;
   .before-tracklist {
-    font-size: 20px;
+    font-size: 35px;
+    font-family: @primary_font;
   }
 }
 
@@ -68,8 +70,15 @@ body {
 }
 
 .link-to-search-page-wrapper {
+  .home-page-title {
+    font-family: @primary_font;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 2em;
+  }
   .link-to-search-page {
-    margin-top: 15em;
+    margin-top: 7em;
     margin-left: 45%;
     color: white;
     background-color: rgba(171, 216, 192, 0.52);
@@ -81,7 +90,20 @@ body {
       position: relative;
       top: 2em;
       font-size: 20px;
-      left: 1.5em;
+      left: 1.4em;
+      font-weight: 400;
+      font-family: @primary_font;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      margin-left: 40%;
+      margin-top: 10em;
+      span {
+        font-size: 40px;
+        top: 2.2em;
+      }
     }
   }
   .link-to-search-page:hover {
@@ -133,6 +155,7 @@ body {
 
 .error-message-input {
   color: #9b063e;
+  padding: 0;
 }
 
 .search-results-container {
@@ -145,7 +168,13 @@ body {
     background-color: @gray_hover;
   }
 }
-
+.song-data-wrapper {
+  @media screen and (max-width: 1000px) {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: -75px;
+  }
+}
 .album-image {
   margin-right: 2em;
   border: solid 0.5px gainsboro;
@@ -168,6 +197,15 @@ body {
    margin-top: 15px;
     margin-left: -15px;
   }
+  @media screen and (max-width: 1367px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1025px) {
+    margin-top: 40px;
+  }
+  @media screen and (max-width: 1000px) {
+    margin-top: -33px;
+  }
 }
 
 .bpm-label,
@@ -179,7 +217,14 @@ body {
 .duration-number {
   font-size: 30px;
 }
-
+.preview-track {
+  display: block;
+  float: left;
+  font-family: @primary_font;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+}
 .not-found-page {
   position: absolute;
   top: 40%;
@@ -197,6 +242,12 @@ body {
   -webkit-animation:slide 4s infinite;
   -moz-animation:slide 4s infinite;
   animation:slide 4s infinite;
+  @media screen and (max-width: 1367px) {
+    top: 20%;
+  }
+  @media screen and (max-width: 1025px) {
+    top: 15%;
+  }
 }
 
 
