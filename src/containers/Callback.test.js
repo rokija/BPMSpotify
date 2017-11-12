@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { Callback, mapStateToProps, mapDispatchToProps } from './Callback';
 
 const context = { router: { history: [] }  };
@@ -12,7 +13,8 @@ const minProps = {
 describe('Callback', () => {
     const wrapper = shallow(<Callback {...minProps} />, { context });
     const wrapperInstance = wrapper.instance();
-    it('renders', () => {
+
+    it('renders properly', () => {
         expect(wrapper.length).toEqual(1);
     });
 
@@ -26,5 +28,9 @@ describe('Callback', () => {
 
     it('calls typeof mapDispatchToProps', () => {
         expect(typeof (mapDispatchToProps())).toEqual("object");
+    });
+
+    it('matches snapshot', () => {
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 });

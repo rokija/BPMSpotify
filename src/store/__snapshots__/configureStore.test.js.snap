@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`configureStore returns initial State for configureStoreProd 1`] = `
+Object {
+  "audioFeatures": Object {},
+  "authReducer": Object {},
+  "routing": Object {
+    "location": null,
+  },
+  "search": Object {},
+}
+`;

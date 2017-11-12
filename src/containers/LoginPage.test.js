@@ -1,10 +1,9 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { LoginPage, mapDispatchToProps, mapStateToProps } from './LoginPage';
 
 const context = { router: { history: [] }  };
-
-
 
 describe('LoginPage if user is Logged in', () => {
     const minProps = {
@@ -55,5 +54,9 @@ describe('LoginPage with shallow wrapper', () => {
 
     it('calls logIn', () => {
         expect(wrapperInstance.logIn()).toEqual(true);
+    });
+
+    it('matches snapshot', () => {
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 });

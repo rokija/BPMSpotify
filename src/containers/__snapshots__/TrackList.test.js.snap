@@ -1,0 +1,2466 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
+<div>
+  <div
+    className="container search-results-container"
+    key="trackItem-0"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:3CbZJbqh43varroTwUlwSB&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 21,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 79,
+                  "value": 79,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            0
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            122
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            2:15
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/a3fd5f178b7eb68b9dba4da9711f05a714efc966?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-1"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:2NyrXRn4tancYPW6JwtTl2&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 21,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 79,
+                  "value": 79,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            10
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            99
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            2:39
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/155643656a12e570e4dda20a9a24d9da765b9ac5?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-2"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:1fEl5TPKRJAsuP6TqZ23hB&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 26,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 74,
+                  "value": 74,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            0
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            122
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            2:15
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/a3fd5f178b7eb68b9dba4da9711f05a714efc966?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-3"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:4S7YHmlWwfwArgd8LfSPud&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 25,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 75,
+                  "value": 75,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            2
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            120
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            3:58
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/acc8c9d799cd91fcb1045ad7ba44663a4f574c80?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-4"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:6tUgfsOa8PLkoede5nOR7D&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 24,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 76,
+                  "value": 76,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            1
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            95
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            3:40
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/6bd25386f878411a3be06fb0698f5fef2e0f5176?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-5"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:6crBy2sODw2HS53xquM6us&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 35,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 65,
+                  "value": 65,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            9
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            94
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            4:08
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/13b757fb24cd4e9362d37eb7ba8671c7ece1352f?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-6"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:2oN4q66KUcOnWO86FVyctY&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 36,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 64,
+                  "value": 64,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            1
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            122
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            4:21
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/1b60c2466a99d299ceedca34a8daf8bbe921dbce?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-7"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:5nnnoeboXoY57eZPDsPr4i&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 71,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 29,
+                  "value": 29,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            2
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            91
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            9:58
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/c7cdcec29b0ac7a5baea65190054756a1f50f280?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-8"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:4XHQyvbrBsQaaBUW1VvmsL&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 38,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 62,
+                  "value": 62,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            1
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            120
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            4:59
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src={null}
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-9"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:1ulDt6ySVbMbzZCBO6hSfb&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 28,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 72,
+                  "value": 72,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            5
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            97
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            3:40
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/bb3967852823cb1c66d5f0af30b575bbf58a8f2c?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-10"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:3uA8SjMyDtwtt0jLPMQbVD&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 43,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 57,
+                  "value": 57,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            7
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            170
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            3:49
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src={null}
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-11"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:2MZSXhq4XDJWu6coGoXX1V&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 31,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 69,
+                  "value": 69,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            8
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            158
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            2:06
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/8b0ffffe73ff5ba8bc187516b468777969d7a843?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-12"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:6E0dc82Da4W5QWXR8ktoGT&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 41,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 59,
+                  "value": 59,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            10
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            126
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            2:49
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/cae754ea79705b7161191ac772f5e928985ce503?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-13"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:3xJj1mU7B83yop2dA03Smk&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 39,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 61,
+                  "value": 61,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            0
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            96
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            3:15
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/afeda9ff0372750cbe04b37a53bab11c40fc604d?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-14"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:6sXGAnO8f49MMr7rFCKdAK&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 85,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 15,
+                  "value": 15,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            1
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            67
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            4:06
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/2e1d8d5329425fb39b10274925eceeab840bfd92?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-15"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:7DdmQ4aGAb60e6fVleA7cl&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 82,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 18,
+                  "value": 18,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            6
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            69
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            2:41
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/70cc9f6a94b84d857cd1e9c7931053f3246396c2?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-16"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:3aXxtMAkixxgq7VtnRcdbI&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 85,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 15,
+                  "value": 15,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            1
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            72
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            3:26
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/fdfcac5f467dd8fb75c9ed18ceb09a62b143ea07?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-17"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:0e95VfVOg5G6mbyo97sAN7&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 85,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 15,
+                  "value": 15,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            1
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            77
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            4:18
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/1f58285a10d8020a64bf8328e67807fa44819963?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-18"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:63sF0XWwpOW8D4L4NHZ2lV&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 86,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 14,
+                  "value": 14,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            1
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            75
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            11:04
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/6ebc0c7a15a6a59745ba9bf4d742ff0e95db79bb?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container search-results-container"
+    key="trackItem-19"
+  >
+    <div>
+      <div
+        className="col-md-6 col-xs-12"
+      >
+        <iframe
+          allowTransparency="true"
+          frameBorder="0"
+          height="80"
+          src="https://open.spotify.com/embed?uri=spotify:track:7agnxnigAzIOP4zHAOXbsk&theme=white"
+          width="350"
+        />
+      </div>
+      <div
+        className="song-data-wrapper col-md-6 col-xs-12"
+      >
+        <div
+          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+        >
+          <ReactMinimalPieChart
+            animate={true}
+            animationDuration={500}
+            animationEasing="ease-out"
+            cx={50}
+            cy={50}
+            data={
+              Array [
+                Object {
+                  "color": "transparent",
+                  "value": 41,
+                },
+                Object {
+                  "color": "#abd8c0",
+                  "key": 59,
+                  "value": 59,
+                },
+              ]
+            }
+            lengthAngle={360}
+            lineWidth={40}
+            paddingAngle={0}
+            radius={50}
+            ratio={1}
+            rounded={true}
+            startAngle={0}
+          />
+          <span
+            className="col-md-12 bpm-label"
+          >
+            popularity
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right key-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            2
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            key
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right bpm-container"
+        >
+          <span
+            className="col-md-12 bpm-number"
+          >
+            127
+          </span>
+          <span
+            className="col-md-12 bpm-label"
+          >
+            BPM
+          </span>
+        </div>
+        <div
+          className="col-md-3 col-xs-3 pull-right duration-container"
+        >
+          <span
+            className="col-md-12 duration-number"
+          >
+            2:14
+          </span>
+          <span
+            className="col-md-12 duration-label"
+          >
+            duration
+          </span>
+        </div>
+        <div
+          className="col-md-1 col-xs-1"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        className="col-md-12 col-xs-12"
+      >
+        <span
+          className="preview-track"
+        >
+          Preview
+        </span>
+        <audio
+          controls={true}
+        >
+          <source
+            src="https://p.scdn.co/mp3-preview/268b25055b2d34ef8e8f985a93f2c54b9a53ef84?cid=fedf859105a2482d8cfb9c2347a9305c"
+            type="audio/mp3"
+          />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+`;

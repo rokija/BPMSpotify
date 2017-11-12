@@ -1,0 +1,49 @@
+{
+  "i":284,
+  "l":true,
+  "exports":{
+    "history":{
+      "length":10,
+      "action":"PUSH",
+      "location":{
+        "pathname":"/search",
+        "search":"",
+        "hash":"",
+        "key":"crax68"
+      }
+    }
+  },
+  "hot":{
+    "_acceptedDependencies":{
+
+    },
+    "_declinedDependencies":{
+
+    },
+    "_selfAccepted":false,
+    "_selfDeclined":false,
+    "_disposeHandlers":[
+
+    ],
+    "_main":false,
+    "active":true
+  },
+  "parents":[
+    253
+  ],
+  "children":[
+    4,
+    12,
+    299,
+    303,
+    304,
+    45,
+    50
+  ],
+  "paths":[
+
+  ],
+  "loaded":true,
+  "id":284,
+  "webpackPolyfill":1
+}

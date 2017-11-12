@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage with shallow wrapper matches snapshot 1`] = `
+<div
+  className="login-page-wrapper"
+>
+  <h2>
+    Please Log in with 
+    <div
+      className="spotify-icon-black"
+    />
+  </h2>
+  <button
+    className="login-button"
+    onClick={[Function]}
+  >
+    Log in
+  </button>
+</div>
+`;
