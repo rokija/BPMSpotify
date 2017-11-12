@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { SearchBar, mapDispatchToProps } from './SearchBar';
 import Cookies from 'universal-cookie';
 
@@ -59,6 +60,10 @@ describe('SearchBar', () => {
             wrapperInstance.setState({ term: '' });
             wrapperInstance.onFormSubmit({preventDefault: () => {}});
             expect(wrapperInstance.state.term).toEqual('');
+        });
+
+        it('matches snapshot', () => {
+            expect(toJson(wrapper)).toMatchSnapshot();
         });
     });
 });

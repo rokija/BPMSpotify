@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeforeTrackList matches snapshot 1`] = `
+<div
+  className="before-tracklist-wrapper"
+>
+  <div
+    className="arrow-up glyphicon glyphicon-menu-up"
+  />
+  <span
+    className="before-tracklist"
+  >
+    Enter text in Search bar to get track details
+  </span>
+</div>
+`;

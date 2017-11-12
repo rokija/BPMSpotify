@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { TrackList, mapDispatchToProps, mapStateToProps } from './TrackList';
 import searchResultsData from '../../_mocks_/_mockdata_/searchResultsData';
 import audioFeaturesData from '../../_mocks_/_mockdata_/audioFeaturesData';
@@ -26,12 +27,16 @@ describe('TrackList', () => {
         expect(typeof (mapDispatchToProps())).toEqual("object");
     });
 
-    describe('testing methods', () => {
+    describe('testing with shallow wrapper', () => {
         const wrapper = shallow(<TrackList {...minProps} />);
         const wrapperInstance = wrapper.instance();
 
         it('calls componentWillReceiveProps', () => {
             wrapperInstance.componentWillReceiveProps(minProps);
+        });
+
+        it('matches snapshot', () => {
+            expect(toJson(wrapper)).toMatchSnapshot();
         });
     });
 });

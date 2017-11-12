@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import HomePage from './HomePage';
+import toJson from 'enzyme-to-json';
 import Cookies from 'universal-cookie';
 
 const cookies = new Cookies();
@@ -18,5 +19,10 @@ describe('HomePage', () => {
         cookies.set('token', '', { path: '/' });
         const wrapper = shallow(<HomePage />, { context });
         expect(wrapper.length).toEqual(1);
+    });
+
+    it('matches snapshot', () => {
+        const wrapper = shallow(<HomePage />);
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 });

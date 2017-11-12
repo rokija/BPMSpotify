@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root matches snapshot 1`] = `
+<Provider
+  store={Object {}}
+>
+  <ConnectedRouter
+    history={Object {}}
+  >
+    <App />
+  </ConnectedRouter>
+</Provider>
+`;

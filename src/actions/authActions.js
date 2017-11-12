@@ -8,9 +8,9 @@ import { Client } from 'spotify-sdk';
 
 let client = Client.instance;
 
-// const client_id = 'fedf859105a2482d8cfb9c2347a9305c';
-// const redirect_url = 'http://localhost:3000/callback';
-// const scopes = ['user-follow-modify user-follow-read user-library-read user-top-read user-read-private user-read-email'];
+const client_id = 'fedf859105a2482d8cfb9c2347a9305c';
+const redirect_url = 'http://localhost:3000/callback';
+const scopes = ['user-follow-modify user-follow-read user-library-read user-top-read user-read-private user-read-email'];
 
 client.settings = {
     clientId: 'fedf859105a2482d8cfb9c2347a9305c',
@@ -20,41 +20,38 @@ client.settings = {
     redirect_uri: 'http://localhost:3000/callback'
 };
 
-// let url = `https://accounts.spotify.com/authorize/?client_id=${client_id}&response_type=token&redirect_uri=${redirect_url}&scope=${scopes}&state=34fFs29kd09&&redirect_uri=${redirect_url}`;
-//
-// export function getAuth() {
-//     return function (dispatch) {
-//             axios({
-//                 url: url,
-//                 headers: {
-//                     'Access-Control-Allow-Origin': '*',
-//                 },
-//                 method: 'get'
-//             }).then((response) => {
-//                 dispatch(logInSuccess(response, types.LOG_IN_SUCCESS));
-//                 window.location.href = response.config.url;
-//             }).catch((error) => {
-//                 dispatch(loginError(error, types.LOG_IN_ERROR));
-//             });
-//     };
-// }
+let url = `https://accounts.spotify.com/authorize/?client_id=${client_id}&response_type=token&redirect_uri=${redirect_url}&scope=${scopes}&state=34fFs29kd09&&redirect_uri=${redirect_url}`;
 
 
 export function getAuth() {
-        return function (dispatch) {
-            client.login().then((url) => {
-            window.location.href = url;
-              axios({
-                  url,
-                  method: 'get'
-            }).then((response) => {
-                dispatch(logInSuccess(response, types.LOG_IN_SUCCESS));
-            }).catch((error) => {
-                dispatch(loginError(error, types.LOG_IN_ERROR));
+            let request = axios({
+                url: url,
+                method: 'get'
             });
-        });
-    };
+
+        return (dispatch) => {
+                return request.then((response) => {
+                    dispatch(logInSuccess(response, types.LOG_IN_SUCCESS));
+                    window.location.href = response.config.url;
+                }).catch((error) => {
+                    dispatch(loginError(error, types.LOG_IN_ERROR));
+                });
+            };
 }
+
+
+// export function getAuth() {
+//             let request = client.login();
+//
+//             return (dispatch) => {
+//                 return request.then((url) => {
+//                     dispatch(logInSuccess(url, types.LOG_IN_SUCCESS));
+//                     window.location.href = url;
+//                 }).catch((error) => {
+//                     dispatch(loginError(error, types.LOG_IN_ERROR));
+//                 });
+//             };
+// }
 
 
 export function logInSuccess(response) {
