@@ -5,7 +5,6 @@ import {chalkProcessing} from './chalkConfig';
 console.log(chalkProcessing('Opening production build...'));
 
 browserSync({
-  open: false,
   port: 3000,
   ui: {
     port: 3001
