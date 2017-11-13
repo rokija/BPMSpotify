@@ -12,19 +12,19 @@ client.settings = {
     response_type: 'code',
     secretId: 'b0e450f938b144a9a21d6d1c3f5ec326',
     scopes: ['user-follow-modify user-follow-read user-library-read user-top-read user-read-private user-read-email'],
-    redirect_uri: 'http://localhost:3000/callback'
+    redirect_uri: 'https://spotify-song-data.firebaseapp.com/callback'
 };
 
 export function getAuth() {
-            let request = client.login();
-            return (dispatch) => {
-                return request.then((url) => {
-                    dispatch(logInSuccess(url, types.LOG_IN_SUCCESS));
-                    window.location.href = url;
-                }).catch((error) => {
-                    dispatch(loginError(error, types.LOG_IN_ERROR));
-                });
-            };
+    let request = client.login();
+    return (dispatch) => {
+        return request.then((url) => {
+            dispatch(logInSuccess(url, types.LOG_IN_SUCCESS));
+            window.location.href = url;
+        }).catch((error) => {
+            dispatch(loginError(error, types.LOG_IN_ERROR));
+        });
+    };
 }
 
 export function logInSuccess(response) {
