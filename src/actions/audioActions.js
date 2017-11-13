@@ -18,7 +18,6 @@ export function getAudioError(error) {
     };
 }
 
-
 export function getAudioFeatures(ids){
     let tokenData = cookies.get('token'),
         request;

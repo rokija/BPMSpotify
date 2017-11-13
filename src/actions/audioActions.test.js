@@ -11,7 +11,20 @@ const cookies = new Cookies();
 
 const mockStore = configureMockStore([thunk]);
 
-let mock = new MockAdapter(axios, { delayResponse: 2000 });
+let mock = new MockAdapter(axios);
+
+axios.interceptors.response.use(response => {
+    const newResponse = {
+        status: response.status,
+        data: response.data
+    };
+    return newResponse;
+}, error => {
+    let newError = {
+        status: error.response.status
+    };
+    return Promise.reject(newError);
+});
 
 describe('audioActions', () => {
     beforeAll(() => {
@@ -39,8 +52,8 @@ describe('audioActions', () => {
             .then(() => {
                 const expectedActions = store.getActions();
                 expect(expectedActions.length).toBe(1);
-                expect(expectedActions).toEqual([{type: types.GET_FEATURES, payload: {data: audioFeaturesData, "status": 200 }}]);
-            }).catch(() => {});
+                expect(expectedActions).toEqual([{type: types.GET_FEATURES, payload: { data: audioFeaturesData, status: 200 }}]);
+            });
     });
 
     it('returns error', () => {
@@ -53,7 +66,7 @@ describe('audioActions', () => {
             .then(() => {
                 const expectedActions = store.getActions();
                 expect(expectedActions.length).toBe(1);
-                expect(expectedActions).toEqual([{"error": {"status": 400}, "type": "GET_FEATURES_ERROR"}]);
-            }).catch(() => {});
+                expect(expectedActions).toEqual([{ error: { status: 400 }, type: types.GET_FEATURES_ERROR }]);
+            });
     });
 });

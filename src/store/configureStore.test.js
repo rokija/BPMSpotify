@@ -9,6 +9,5 @@ describe('configureStore', () => {
     it('returns initial State for configureStoreProd', () => {
         const store = configureStoreProd();
         expect(store.getState()).toEqual({"audioFeatures": {}, "authReducer": {}, "routing": {"location": null}, "search": {}});
-        expect(store.getState()).toMatchSnapshot();
     });
 });

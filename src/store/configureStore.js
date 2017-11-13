@@ -4,7 +4,7 @@ import thunk from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
 import { routerMiddleware } from 'react-router-redux';
 import rootReducer from '../reducers';
-const history = createHistory();
+export const history = createHistory();
 export function configureStoreProd(initialState) {
   const reactRouterMiddleware = routerMiddleware(history);
   const middlewares = [
@@ -33,6 +33,7 @@ function configureStoreDev(initialState) {
   );
 
   /* istanbul ignore next */
+  /* can't test hot reloading */
   if (module.hot) {
     module.hot.accept('../reducers', () => {
       const nextReducer = require('../reducers').default;

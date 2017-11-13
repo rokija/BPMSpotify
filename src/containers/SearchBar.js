@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { getSearchResults } from '../actions/searchActions';
-import '../styles/about-page.css';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
@@ -45,7 +44,7 @@ export class SearchBar extends Component {
             this.setState({ term: '' });
         }
         else {
-            this.setState({ errorMessage: 'please write a song or an artist name in the input' });
+            this.setState({ errorMessage: 'please write a song or an artist name in the search box' });
         }
     }
 
@@ -69,7 +68,6 @@ export class SearchBar extends Component {
     }
 }
 
-
 SearchBar.propTypes = {
     dispatch: PropTypes.func,
     searchTerm: PropTypes.string,
@@ -80,7 +78,6 @@ SearchBar.propTypes = {
 SearchBar.contextTypes = {
     router: PropTypes.object
 };
-
 
 export function mapDispatchToProps(dispatch) {
     return bindActionCreators({ getSearchResults }, dispatch);

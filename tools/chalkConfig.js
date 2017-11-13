@@ -1,4 +1,3 @@
-// Centralized configuration for chalk, which is used to add color to console.log statements.
 import chalk from 'chalk';
 export const chalkError = chalk.red;
 export const chalkSuccess = chalk.green;

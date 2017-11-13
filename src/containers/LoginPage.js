@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { getAuth } from '../actions/authActions';
-import '../styles/about-page.css';
 
 export class LoginPage extends Component {
     constructor() {
