@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { getSearchResults } from '../actions/searchActions';
-import '../styles/about-page.css';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
