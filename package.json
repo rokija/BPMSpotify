@@ -13,7 +13,7 @@
     "test": "jest",
     "test:cover": "npm run test -- --coverage",
     "test:watch": "jest --watch",
-    "start": "npm-run-all --parallel test:watch open:src lint:watch",
+    "start": "npm-run-all --parallel open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
@@ -21,7 +21,7 @@
     "build": "npm run test -- --coverage && babel-node tools/build.js && npm run open:dist",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
     "validate": "npm ls",
-    "heroku-postbuild": "babel-node tools/build.js && npm run open:dist"
+    "postinstall": "babel-node tools/build.js && npm run open:dist"
   },
   "author": "Ruta Freimane",
   "license": "MIT",
