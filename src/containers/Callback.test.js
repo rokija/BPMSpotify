@@ -23,7 +23,7 @@ describe('Callback', () => {
     });
 
     it('calls mapStateToProps', () => {
-        expect(mapStateToProps({authReducer: { isLogged: true }})).toEqual({"authReducer": {"isLogged": true}});
+        expect(mapStateToProps({ authReducer: { isLogged: true }})).toEqual({ authReducer: { isLogged: true }});
     });
 
     it('calls typeof mapDispatchToProps', () => {

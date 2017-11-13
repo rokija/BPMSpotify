@@ -20,7 +20,7 @@ describe('TrackList', () => {
     });
 
     it('calls typeof mapStateToProps', () => {
-        expect(mapStateToProps({ search: {}, audioFeatures: {} })).toEqual({"audioFeatures": {}, "search": {}});
+        expect(mapStateToProps({ search: {}, audioFeatures: {} })).toEqual({ audioFeatures: {}, search: {}});
     });
 
     it('calls typeof mapDispatchToProps', () => {
@@ -40,4 +40,3 @@ describe('TrackList', () => {
         });
     });
 });
-

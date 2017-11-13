@@ -6,5 +6,3 @@ export const SET_SEARCH_TERM = 'SET_SEARCH_TERM';
 
 export const GET_FEATURES = 'GET_FEATURES';
 export const GET_FEATURES_ERROR = 'GET_FEATURES_ERROR';
-
-

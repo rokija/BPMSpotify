@@ -10,22 +10,20 @@ import searchResultsActionData from '../../_mocks_/_mockdata_/searchResultsActio
 const cookies = new Cookies();
 
 const mockStore = configureMockStore([thunk]);
-let mock = new MockAdapter(axios, { delayResponse: 2000 });
+let mock = new MockAdapter(axios);
 
-
-// axios.interceptors.response.use(response => {
-//     const newResponse = {
-//         status: response.status,
-//         data: response.data
-//     };
-//     return newResponse;
-// }, error => {
-//     let newError = {
-//         status: error.response.status
-//     };
-//     return Promise.reject(newError);
-// });
-
+axios.interceptors.response.use(response => {
+    const newResponse = {
+        status: response.status,
+        data: response.data
+    };
+    return newResponse;
+}, error => {
+    let newError = {
+        status: error.response.status
+    };
+    return Promise.reject(newError);
+});
 
 describe('searchActions', () => {
     beforeAll(() => {
@@ -54,7 +52,7 @@ describe('searchActions', () => {
                 const expectedActions = store.getActions();
                 expect(expectedActions.length).toBe(1);
                 expect(expectedActions).toEqual([{type: types.SET_SEARCH_TERM, payload: {data: searchResultsActionData, "status": 200 }}]);
-            }).catch(() => {});
+            });
     });
 
     it('returns error', () => {
@@ -67,7 +65,7 @@ describe('searchActions', () => {
             .then(() => {
                 const expectedActions = store.getActions();
                 expect(expectedActions.length).toBe(1);
-                expect(expectedActions).toEqual([{"error": {"status": 400}, "type": "SEARCH_ERROR"}]);
-            }).catch(() => {});
+                expect(expectedActions).toEqual([{ error: { status: 400 }, type: types.SEARCH_ERROR }]);
+            });
     });
 });

@@ -33,6 +33,7 @@ function configureStoreDev(initialState) {
   );
 
   /* istanbul ignore next */
+  /* can't test hot reloading */
   if (module.hot) {
     module.hot.accept('../reducers', () => {
       const nextReducer = require('../reducers').default;

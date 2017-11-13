@@ -1,5 +1,5 @@
 import webpack from 'webpack';
-import {BundleAnalyzerPlugin} from 'webpack-bundle-analyzer';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import config from '../webpack.config.prod';
 
 config.plugins.push(new BundleAnalyzerPlugin());
@@ -13,5 +13,5 @@ compiler.run((error, stats) => {
     throw new Error(error);
   }
 
-  console.log(stats); // eslint-disable-line no-console
+  console.log(stats);
 });
