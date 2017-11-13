@@ -10,7 +10,7 @@
     "node": "8.2.1"
   },
   "scripts": {
-    "heroku-postbuild": "webpack -p --config ./webpack.config.prod.js --progress",
+    "heroku-postbuild": "npm run test -- --coverage && babel-node tools/build.js && npm run open:dist",
     "start": "npm-run-all --parallel test:watch open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
