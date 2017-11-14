@@ -57,7 +57,7 @@ export class TrackList extends Component {
 
         let renderItems = audioFeaturesList.map((featureItem) => {
             return trackItems.map((trackItems,index) => {
-                if(featureItem.id === trackItems.id) {
+                if(featureItem && trackItems && featureItem.id === trackItems.id) {
                     return (
                         <div className="container search-results-container" key={'trackItem-' + index}>
                             <div>

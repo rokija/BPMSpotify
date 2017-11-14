@@ -1,5 +1,8 @@
 {
   "name": "bpmspotify",
+  "quokka": {
+    "babel": true
+  },
   "repository": {
     "type": "git",
     "url": "git:/github.com/rokija/BPMSpotify.git"
@@ -13,15 +16,14 @@
     "test": "jest",
     "test:cover": "npm run test -- --coverage",
     "test:watch": "jest --watch",
-    "start": "npm-run-all --parallel open:src lint:watch",
+    "start": "npm-run-all --parallel test:watch open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
     "lint:watch": "npm run lint -- --watch",
     "build": "npm run test -- --coverage && babel-node tools/build.js && npm run open:dist",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
-    "validate": "npm ls",
-    "heroku-postbuild": "babel-node tools/build.js && babel-node herokuServer.js"
+    "validate": "npm ls"
   },
   "author": "Ruta Freimane",
   "license": "MIT",
@@ -49,6 +51,7 @@
     "file-loader": "0.11.2",
     "history": "4.6.0",
     "html-webpack-plugin": "2.29.0",
+    "jsdom": "^11.3.0",
     "json-loader": "0.5.4",
     "less": "2.7.2",
     "less-loader": "4.0.5",
@@ -57,6 +60,7 @@
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
+    "react-hot-loader": "3.0.0-beta.6",
     "react-minimal-pie-chart": "^3.0.1",
     "react-redux": "5.0.5",
     "react-router-dom": "4.2.2",
@@ -72,9 +76,8 @@
     "url-loader": "0.5.9",
     "webpack": "3.1.0",
     "webpack-bundle-analyzer": "2.8.2",
-    "webpack-md5-hash": "0.0.5",
-    "react-hot-loader": "3.0.0-beta.6",
-    "webpack-hot-middleware": "2.18.2"
+    "webpack-hot-middleware": "2.18.2",
+    "webpack-md5-hash": "0.0.5"
   },
   "devDependencies": {
     "enzyme": "3.0.0",
@@ -100,7 +103,8 @@
     },
     "setupFiles": [
       "raf/polyfill",
-      "./tools/enzymeTestAdapterSetup.js"
+      "./tools/enzymeTestAdapterSetup.js",
+      "./tools/browserMock.js"
     ],
     "roots": [
       "<rootDir>/src/"
