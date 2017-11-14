@@ -21,7 +21,7 @@
     "build": "npm run test -- --coverage && babel-node tools/build.js && npm run open:dist",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js",
     "validate": "npm ls",
-    "heroku-postbuild": "babel-node tools/build.js && babel-node herokuServer.js"
+    "heroku-postbuild": "node herokuServer.js"
   },
   "author": "Ruta Freimane",
   "license": "MIT",

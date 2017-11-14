@@ -1,8 +1,8 @@
-import path from "path";
-import express from "express";
+var path = require("path")
+var express = require("express")
 process.env.NODE_ENV = 'production';
 
-const app         = express(),
+var app         = express(),
     DIST_DIR      = path.join(__dirname, "dist"),
     HTML_FILE     = path.join(DIST_DIR, "index.html"),
     DEFAULT_PORT  = 3000;
