@@ -13,7 +13,41 @@ describe('authActions', () => {
         mock.reset();
     });
 
-    it('should call validateCallbackResult with login success', () => {
+    it('should create an action creator logInSuccess', () => {
+        const payload = 'response';
+        const actionType = types.LOG_IN_SUCCESS;
+        const expectedAction = {
+            type: types.LOG_IN_SUCCESS,
+            payload
+        };
+        expect(actions.logInSuccess(payload, actionType)).toEqual(expectedAction);
+    });
+
+    it('should create an action creator loginError', () => {
+        const payload = 'error';
+        const actionType = types.LOG_IN_ERROR;
+        const expectedAction = {
+            type: types.LOG_IN_ERROR,
+            payload
+        };
+        expect(actions.loginError(payload, actionType)).toEqual(expectedAction);
+
+    });
+
+    it('should call function getAuth with login success', () => {
+        expect(typeof (actions.getAuth())).toEqual("function");
+
+        const dispatch = jest.fn();
+        const expected = {
+            payload: "https://accounts.spotify.com/en/authorize?response_type=token&client_id=fedf859105a2482d8cfb9c2347a9305c&redirect_uri=https%3A%2F%2Fspotify-song-data.firebaseapp.com%2Fcallback&scope=user-follow-modify%20user-follow-read%20user-library-read%20user-top-read%20user-read-private%20user-read-email",
+            type: types.LOG_IN_SUCCESS
+        };
+        return actions.getAuth()(dispatch).then(() => {
+            expect(dispatch).toBeCalledWith(expected);
+        });
+    });
+
+    it('should call function validateCallbackResult with login success', () => {
         expect(typeof (actions.validateCallbackResult(locationHash))).toEqual("function");
 
         const dispatch = jest.fn();
@@ -27,7 +61,7 @@ describe('authActions', () => {
         expect(dispatch).toBeCalledWith(expected);
     });
 
-    it('should call validateCallbackResult with login error', () => {
+    it('should call function validateCallbackResult with login error', () => {
         const dispatch = jest.fn();
         const expected = {
             type: types.LOG_IN_ERROR,

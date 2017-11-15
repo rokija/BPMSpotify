@@ -4,17 +4,26 @@ exports[`LoginPage with shallow wrapper matches snapshot 1`] = `
 <div
   className="login-page-wrapper"
 >
-  <h2>
-    Please Log in with 
+  <div
+    className="background-image-login-page"
+    onMouseMove={[Function]}
+  />
+  <div
+    className="login-button-label-wrapper"
+    onMouseMove={[Function]}
+  >
+    <h2>
+      Please Log in with
+    </h2>
     <div
       className="spotify-icon-black"
     />
-  </h2>
-  <button
-    className="login-button"
-    onClick={[Function]}
-  >
-    Log in
-  </button>
+    <button
+      className="login-button"
+      onClick={[Function]}
+    >
+      Log in
+    </button>
+  </div>
 </div>
 `;

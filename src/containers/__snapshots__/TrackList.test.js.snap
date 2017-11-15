@@ -24,33 +24,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 21,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 79,
-                  "value": 79,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 21,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 79,
+                    "value": 79,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -106,7 +110,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -147,33 +151,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 21,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 79,
-                  "value": 79,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 21,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 79,
+                    "value": 79,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -229,7 +237,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -270,33 +278,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 26,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 74,
-                  "value": 74,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 26,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 74,
+                    "value": 74,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -352,7 +364,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -393,33 +405,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 25,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 75,
-                  "value": 75,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 25,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 75,
+                    "value": 75,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -475,7 +491,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -516,33 +532,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 24,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 76,
-                  "value": 76,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 24,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 76,
+                    "value": 76,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -598,7 +618,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -639,33 +659,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 35,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 65,
-                  "value": 65,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 35,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 65,
+                    "value": 65,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -721,7 +745,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -762,33 +786,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 36,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 64,
-                  "value": 64,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 36,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 64,
+                    "value": 64,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -844,7 +872,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -885,33 +913,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 71,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 29,
-                  "value": 29,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 71,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 29,
+                    "value": 29,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -967,7 +999,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1008,33 +1040,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 38,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 62,
-                  "value": 62,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 38,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 62,
+                    "value": 62,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -1090,7 +1126,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1131,33 +1167,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 28,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 72,
-                  "value": 72,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 28,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 72,
+                    "value": 72,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -1213,7 +1253,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1254,33 +1294,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 43,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 57,
-                  "value": 57,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 43,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 57,
+                    "value": 57,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -1336,7 +1380,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1377,33 +1421,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 31,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 69,
-                  "value": 69,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 31,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 69,
+                    "value": 69,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -1459,7 +1507,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1500,33 +1548,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 41,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 59,
-                  "value": 59,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 41,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 59,
+                    "value": 59,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -1582,7 +1634,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1623,33 +1675,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 39,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 61,
-                  "value": 61,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 39,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 61,
+                    "value": 61,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -1705,7 +1761,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1746,33 +1802,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 85,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 15,
-                  "value": 15,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 85,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 15,
+                    "value": 15,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -1828,7 +1888,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1869,33 +1929,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 82,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 18,
-                  "value": 18,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 82,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 18,
+                    "value": 18,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -1951,7 +2015,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -1992,33 +2056,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 85,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 15,
-                  "value": 15,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 85,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 15,
+                    "value": 15,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -2074,7 +2142,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -2115,33 +2183,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 85,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 15,
-                  "value": 15,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 85,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 15,
+                    "value": 15,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -2197,7 +2269,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -2238,33 +2310,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 86,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 14,
-                  "value": 14,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 86,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 14,
+                    "value": 14,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -2320,7 +2396,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"
@@ -2361,33 +2437,37 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         <div
           className="pie-chart-container col-md-2 col-xs-2 pull-right"
         >
-          <ReactMinimalPieChart
-            animate={true}
-            animationDuration={500}
-            animationEasing="ease-out"
-            cx={50}
-            cy={50}
-            data={
-              Array [
-                Object {
-                  "color": "transparent",
-                  "value": 41,
-                },
-                Object {
-                  "color": "#abd8c0",
-                  "key": 59,
-                  "value": 59,
-                },
-              ]
-            }
-            lengthAngle={360}
-            lineWidth={40}
-            paddingAngle={0}
-            radius={50}
-            ratio={1}
-            rounded={true}
-            startAngle={0}
-          />
+          <div
+            className="pie-chart"
+          >
+            <ReactMinimalPieChart
+              animate={true}
+              animationDuration={500}
+              animationEasing="ease-out"
+              cx={50}
+              cy={50}
+              data={
+                Array [
+                  Object {
+                    "color": "transparent",
+                    "value": 41,
+                  },
+                  Object {
+                    "color": "#abd8c0",
+                    "key": 59,
+                    "value": 59,
+                  },
+                ]
+              }
+              lengthAngle={360}
+              lineWidth={40}
+              paddingAngle={0}
+              radius={50}
+              ratio={1}
+              rounded={true}
+              startAngle={0}
+            />
+          </div>
           <span
             className="col-md-12 bpm-label"
           >
@@ -2443,7 +2523,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
     </div>
     <div>
       <div
-        className="col-md-12 col-xs-12"
+        className="col-md-12 col-sm-12 audio-preview-wrapper"
       >
         <span
           className="preview-track"

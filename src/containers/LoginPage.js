@@ -4,6 +4,12 @@ import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { getAuth } from '../actions/authActions';
 
+let lFollowX = 0,
+    lFollowY = 0,
+    x = 0,
+    y = 0,
+    friction = 1 / 20;
+
 export class LoginPage extends Component {
     constructor() {
         super();
@@ -26,11 +32,35 @@ export class LoginPage extends Component {
         return true;
     }
 
+    mouseOverAnimation(e) {
+        function moveBackground() {
+            x += (lFollowX - x) * friction;
+            y += (lFollowY - y) * friction;
+            const background = document.getElementsByClassName("background-image-login-page")[0];
+            background.style.transform = 'translate(' + x + 'px, ' + y + 'px) scale(1.2)';
+            window.requestAnimationFrame(moveBackground);
+        }
+
+        let lMouseX = Math.max(-100, Math.min(100, window.innerWidth / 2 - e.clientX));
+        let lMouseY = Math.max(-100, Math.min(100, window.innerHeight / 2 - e.clientY));
+        lFollowX = (20 * lMouseX) / 100;
+        lFollowY = (10 * lMouseY) / 100;
+
+        if (window.innerWidth > 1118) {
+            moveBackground();
+            return true;
+        }
+    }
+
     render() {
         return (
             <div className="login-page-wrapper">
-                <h2>Please Log in with <div className="spotify-icon-black" /></h2>
-                <button className="login-button" onClick={() => this.logIn()}>Log in</button>
+                <div className="background-image-login-page" onMouseMove={(e) => this.mouseOverAnimation(e)} />
+                <div className="login-button-label-wrapper" onMouseMove={(e) => this.mouseOverAnimation(e)}>
+                    <h2>Please Log in with</h2>
+                    <div className="spotify-icon-black" />
+                    <button className="login-button" onClick={() => this.logIn()}>Log in</button>
+                </div>
             </div>
         );
     }
