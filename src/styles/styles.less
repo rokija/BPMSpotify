@@ -12,32 +12,69 @@ body {
 }
 
 .login-page-wrapper {
-  position: absolute;
-  top: 10em;
-  left: 35%;
-  .spotify-icon-black {
-    background-image: url("../assets/Spotify_Logo_RGB_Black.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 150px;
-    height: 50px;
+  .background-image-login-page {
     position: absolute;
-    top: 120%;
-    left: 20%;
+    background-image: url("../assets/markus-spiske-78531.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(1.2);
   }
-  .login-button {
+  .login-button-label-wrapper {
     position: absolute;
-    left: 40%;
-    top: 250%;
-    border-radius: 60px;
-    border: none;
-    padding: 20px 10px;
-    background-color: black;
-    color: white;
-    &focus {
-      outline: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    h2 {
+      font-size: 30px;
+      color: black;
+      font-weight: 200;
+      font-family: @primary_font;
+    }
+    .spotify-icon-black {
+      background-image: url("../assets/Spotify_Logo_RGB_Black.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 150px;
+      height: 50px;
+      margin: 25px auto;
+    }
+    .login-button {
+      font-size: 15px;
+      border-radius: 60px;
+      border: none;
+      padding: 20px 10px;
+      background-color: black;
+      color: white;
+      &focus {
+        outline: none;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      h2 {
+        font-size: 60px;
+      }
+      .spotify-icon-black {
+        width: 250px;
+        height: 100px;
+      }
+      .login-button {
+          font-size: 30px;
+          padding: 50px 20px;
+      }
     }
   }
+}
+
+.login-page-wrapper:after {
+  display: table;
+  content: '';
+  clear: both;
 }
 
 .base-container {
@@ -108,6 +145,7 @@ body {
   }
   .link-to-search-page:hover {
     text-decoration: none;
+    background-color: rgba(115, 175, 136, 0.67);
   }
 }
 .search-page {
@@ -226,7 +264,7 @@ body {
 .arrow-up {
   position: fixed;
   left: 45%;
-  top: 25%;
+  top: 30%;
   font-size: 100px;
   color: @base-green;
   -webkit-animation:slide 4s infinite;

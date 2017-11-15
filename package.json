@@ -48,6 +48,7 @@
     "file-loader": "0.11.2",
     "history": "4.6.0",
     "html-webpack-plugin": "2.29.0",
+    "jsdom": "^11.3.0",
     "json-loader": "0.5.4",
     "less": "2.7.2",
     "less-loader": "4.0.5",
@@ -56,6 +57,7 @@
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
+    "react-hot-loader": "3.0.0-beta.6",
     "react-minimal-pie-chart": "^3.0.1",
     "react-redux": "5.0.5",
     "react-router-dom": "4.2.2",
@@ -71,9 +73,8 @@
     "url-loader": "0.5.9",
     "webpack": "3.1.0",
     "webpack-bundle-analyzer": "2.8.2",
-    "webpack-md5-hash": "0.0.5",
-    "react-hot-loader": "3.0.0-beta.6",
-    "webpack-hot-middleware": "2.18.2"
+    "webpack-hot-middleware": "2.18.2",
+    "webpack-md5-hash": "0.0.5"
   },
   "devDependencies": {
     "enzyme": "3.0.0",
@@ -99,7 +100,8 @@
     },
     "setupFiles": [
       "raf/polyfill",
-      "./tools/enzymeTestAdapterSetup.js"
+      "./tools/enzymeTestAdapterSetup.js",
+      "./tools/browserMock.js"
     ],
     "roots": [
       "<rootDir>/src/"

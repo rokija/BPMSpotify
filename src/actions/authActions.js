@@ -37,7 +37,7 @@ export function logInSuccess(response) {
 export function loginError(error) {
     return {
         type: types.LOG_IN_ERROR,
-        error
+        payload: error
     };
 }
 

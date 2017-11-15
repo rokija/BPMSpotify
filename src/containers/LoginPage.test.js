@@ -3,6 +3,7 @@ import { shallow, mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { LoginPage, mapDispatchToProps, mapStateToProps } from './LoginPage';
 
+
 const context = { router: { history: [] }  };
 
 describe('LoginPage if user is Logged in', () => {
@@ -33,6 +34,18 @@ describe('LoginPage if user is not Logged in', () => {
     it('calls logIn function', () => {
         wrapper.find('button').simulate('click');
     });
+
+    it('calls function mouseOverAnimation', () => {
+        global.window.innerWidth = 1800;
+        wrapper.find('.background-image-login-page').simulate('mousemove');
+        wrapper.find('.login-button-label-wrapper').simulate('mousemove');
+        const e = {
+            clientX: 527,
+            clientY: 370
+        };
+        expect(wrapper.instance().mouseOverAnimation(e)).toEqual(true);
+    });
+
 
     it('calls mapStateToProps', () => {
         expect(mapStateToProps({authReducer: { isLogged: true }})).toEqual({"authReducer": {"isLogged": true}});
