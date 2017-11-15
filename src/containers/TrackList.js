@@ -94,7 +94,7 @@ export class TrackList extends Component {
                                 </div>
                             </div>
                             <div>
-                                <div className="col-md-12 col-xs-12">
+                                <div className="col-md-12 col-sm-12 audio-preview-wrapper col-xs-hidden">
                                     <span className="preview-track">Preview</span>
                                     <audio controls>
                                         <source src={trackItems.preview_url} type="audio/mp3"/>
