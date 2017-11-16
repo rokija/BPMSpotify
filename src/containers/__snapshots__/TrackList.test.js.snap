@@ -56,7 +56,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -183,7 +183,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -310,7 +310,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -437,7 +437,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -564,7 +564,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -691,7 +691,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -818,7 +818,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -945,7 +945,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1072,7 +1072,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1199,7 +1199,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1326,7 +1326,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1453,7 +1453,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1580,7 +1580,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1707,7 +1707,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1834,7 +1834,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1961,7 +1961,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -2088,7 +2088,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -2215,7 +2215,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -2342,7 +2342,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
@@ -2469,7 +2469,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 pie-chart-label"
           >
             popularity
           </span>
