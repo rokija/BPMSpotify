@@ -67,16 +67,18 @@ export class TrackList extends Component {
                                 </div>
                                 <div className="song-data-wrapper col-md-6 col-xs-12">
                                     <div className="pie-chart-container col-md-2 col-xs-2 pull-right">
-                                        <PieChart
-                                            lineWidth={40}
-                                            rounded={true}
-                                            animate={true}
-                                            data={[
-                                                { value: 100 - trackItems.popularity, color: 'transparent' },
-                                                { key: trackItems.popularity, value: trackItems.popularity, color: '#abd8c0' }
-                                            ]}
-                                        />
-                                        <span className="col-md-12 bpm-label">popularity</span>
+                                        <div className="pie-chart">
+                                            <PieChart
+                                                lineWidth={40}
+                                                rounded={true}
+                                                animate={true}
+                                                data={[
+                                                    { value: 100 - trackItems.popularity, color: 'transparent' },
+                                                    { key: trackItems.popularity, value: trackItems.popularity, color: '#abd8c0' }
+                                                ]}
+                                            />
+                                        </div>
+                                        <span className="col-md-12 pie-chart-label">popularity</span>
                                     </div>
                                     <div className="col-md-3 col-xs-3 pull-right key-container">
                                         <span className="col-md-12 bpm-number">{featureItem.key}</span>
