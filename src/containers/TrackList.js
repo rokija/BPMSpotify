@@ -60,14 +60,14 @@ export class TrackList extends Component {
                 if(featureItem && trackItems && featureItem.id === trackItems.id) {
                     return (
                         <div className="container search-results-container" key={'trackItem-' + index}>
-                            <div>
-                                <div className="col-md-6 col-xs-12">
+                            <div className="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div className="i-frame-container col-md-6 col-sm-12 col-xs-12">
                                     <iframe src={`https://open.spotify.com/embed?uri=${trackItems.uri}&theme=white`}
                                             width="350" height="80" frameBorder="0" allowTransparency="true"/>
                                 </div>
-                                <div className="song-data-wrapper col-md-6 col-xs-12">
-                                    <div className="pie-chart-container col-md-2 col-xs-2 pull-right">
-                                        <div className="pie-chart">
+                                <div className="song-data-wrapper col-md-6 col-sm-12 col-xs-12">
+                                    <div className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right">
+                                        <div className="pie-chart hidden-sm hidden-xs">
                                             <PieChart
                                                 lineWidth={40}
                                                 rounded={true}
@@ -78,31 +78,35 @@ export class TrackList extends Component {
                                                 ]}
                                             />
                                         </div>
-                                        <span className="col-md-12 pie-chart-label">popularity</span>
+                                        <span className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number">{trackItems.popularity}%</span>
+                                        <span className="col-md-12 col-sm-12 col-xs-12 pie-chart-label">popularity</span>
                                     </div>
                                     <div className="col-md-3 col-xs-3 pull-right key-container">
-                                        <span className="col-md-12 bpm-number">{featureItem.key}</span>
-                                        <span className="col-md-12 bpm-label">key</span>
+                                        <span className="col-md-12 col-sm-12 col-xs-12 bpm-number">{featureItem.key}</span>
+                                        <span className="col-md-12 col-sm-12 col-xs-12 bpm-label">key</span>
                                     </div>
                                     <div className="col-md-3 col-xs-3 pull-right bpm-container">
-                                        <span className="col-md-12 bpm-number">{featureItem.tempo.toFixed()}</span>
-                                        <span className="col-md-12 bpm-label">BPM</span>
+                                        <span className="col-md-12 col-sm-12 col-xs-12 bpm-number">{featureItem.tempo.toFixed()}</span>
+                                        <span className="col-md-12 col-sm-12 col-xs-12 bpm-label">BPM</span>
                                     </div>
                                     <div className="col-md-3 col-xs-3 pull-right duration-container">
-                                        <span className="col-md-12 duration-number">{this.millisToMinutesAndSeconds(featureItem.duration_ms)}</span>
-                                        <span className="col-md-12 duration-label" >duration</span>
+                                        <span className="col-md-12 col-sm-12 col-xs-12 duration-number">{this.millisToMinutesAndSeconds(featureItem.duration_ms)}</span>
+                                        <span className="col-md-12 col-sm-12 col-xs-12 duration-label" >duration</span>
                                     </div>
-                                    <div className="col-md-1 col-xs-1" />
+                                    <div className="col-md-1 hidden-sm hidden-xs" />
                                 </div>
                             </div>
-                            <div>
-                                <div className="col-md-12 col-sm-12 audio-preview-wrapper">
-                                    <span className="preview-track">Preview</span>
-                                    <audio controls>
-                                        <source src={trackItems.preview_url} type="audio/mp3"/>
-                                        Your browser does not support the audio element.
-                                    </audio>
+                            <div className="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div className="col-md-6 hidden-sm hidden-xs pull-left audio-preview-wrapper">
+                                    <span className="col-md-2 col-lg-2 preview-track">Preview</span>
+                                    <div className="col-md-10 col-lg-10 audio-preview">
+                                        <audio controls>
+                                            <source src={trackItems.preview_url} type="audio/mp3"/>
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
                                 </div>
+                                <div className="col-md-6 pull-right hidden-sm hidden-xs" />
                             </div>
                         </div>
                     );
