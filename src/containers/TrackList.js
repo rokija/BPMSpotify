@@ -60,7 +60,7 @@ export class TrackList extends Component {
                 if(featureItem && trackItems && featureItem.id === trackItems.id) {
                     return (
                         <div className="container search-results-container" key={'trackItem-' + index}>
-                            <div>
+                            <div className="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div className="i-frame-container col-md-6 col-sm-12 col-xs-12">
                                     <iframe src={`https://open.spotify.com/embed?uri=${trackItems.uri}&theme=white`}
                                             width="350" height="80" frameBorder="0" allowTransparency="true"/>
@@ -96,8 +96,8 @@ export class TrackList extends Component {
                                     <div className="col-md-1 hidden-sm hidden-xs" />
                                 </div>
                             </div>
-                            <div>
-                                <div className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper">
+                            <div className="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div className="col-md-6 hidden-sm hidden-xs pull-left audio-preview-wrapper">
                                     <span className="col-md-2 col-lg-2 preview-track">Preview</span>
                                     <div className="col-md-10 col-lg-10 audio-preview">
                                         <audio controls>
@@ -106,6 +106,7 @@ export class TrackList extends Component {
                                         </audio>
                                     </div>
                                 </div>
+                                <div className="col-md-6 pull-right hidden-sm hidden-xs" />
                             </div>
                         </div>
                     );
