@@ -7,7 +7,7 @@ class HomePage extends Component {
             <div className="home-page-wrapper">
                 <div className="link-to-search-page-wrapper">
                     <h3 className="home-page-title">Get song data from spotify</h3>
-                    <Link className="link-to-search-page" to="/search"><span>Enter</span></Link>
+                    <Link className="link-to-search-page" to="/search">Enter</Link>
                 </div>
             </div>
         );

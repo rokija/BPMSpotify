@@ -8,7 +8,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -19,13 +19,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -56,7 +56,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            79
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -65,12 +71,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             0
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -79,12 +85,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             122
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -93,39 +99,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             2:15
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/a3fd5f178b7eb68b9dba4da9711f05a714efc966?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/a3fd5f178b7eb68b9dba4da9711f05a714efc966?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -135,7 +145,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -146,13 +156,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -183,7 +193,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            79
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -192,12 +208,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             10
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -206,12 +222,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             99
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -220,39 +236,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             2:39
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/155643656a12e570e4dda20a9a24d9da765b9ac5?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/155643656a12e570e4dda20a9a24d9da765b9ac5?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -262,7 +282,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -273,13 +293,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -310,7 +330,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            74
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -319,12 +345,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             0
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -333,12 +359,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             122
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -347,39 +373,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             2:15
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/a3fd5f178b7eb68b9dba4da9711f05a714efc966?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/a3fd5f178b7eb68b9dba4da9711f05a714efc966?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -389,7 +419,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -400,13 +430,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -437,7 +467,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            75
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -446,12 +482,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             2
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -460,12 +496,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             120
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -474,39 +510,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             3:58
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/acc8c9d799cd91fcb1045ad7ba44663a4f574c80?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/acc8c9d799cd91fcb1045ad7ba44663a4f574c80?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -516,7 +556,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -527,13 +567,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -564,7 +604,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            76
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -573,12 +619,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             1
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -587,12 +633,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             95
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -601,39 +647,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             3:40
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/6bd25386f878411a3be06fb0698f5fef2e0f5176?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/6bd25386f878411a3be06fb0698f5fef2e0f5176?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -643,7 +693,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -654,13 +704,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -691,7 +741,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            65
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -700,12 +756,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             9
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -714,12 +770,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             94
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -728,39 +784,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             4:08
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/13b757fb24cd4e9362d37eb7ba8671c7ece1352f?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/13b757fb24cd4e9362d37eb7ba8671c7ece1352f?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -770,7 +830,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -781,13 +841,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -818,7 +878,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            64
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -827,12 +893,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             1
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -841,12 +907,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             122
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -855,39 +921,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             4:21
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/1b60c2466a99d299ceedca34a8daf8bbe921dbce?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/1b60c2466a99d299ceedca34a8daf8bbe921dbce?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -897,7 +967,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -908,13 +978,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -945,7 +1015,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            29
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -954,12 +1030,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             2
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -968,12 +1044,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             91
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -982,39 +1058,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             9:58
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/c7cdcec29b0ac7a5baea65190054756a1f50f280?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/c7cdcec29b0ac7a5baea65190054756a1f50f280?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -1024,7 +1104,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -1035,13 +1115,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -1072,7 +1152,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            62
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1081,12 +1167,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             1
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -1095,12 +1181,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             120
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -1109,39 +1195,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             4:59
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src={null}
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src={null}
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -1151,7 +1241,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -1162,13 +1252,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -1199,7 +1289,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            72
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1208,12 +1304,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             5
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -1222,12 +1318,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             97
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -1236,39 +1332,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             3:40
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/bb3967852823cb1c66d5f0af30b575bbf58a8f2c?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/bb3967852823cb1c66d5f0af30b575bbf58a8f2c?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -1278,7 +1378,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -1289,13 +1389,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -1326,7 +1426,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            57
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1335,12 +1441,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             7
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -1349,12 +1455,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             170
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -1363,39 +1469,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             3:49
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src={null}
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src={null}
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -1405,7 +1515,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -1416,13 +1526,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -1453,7 +1563,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            69
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1462,12 +1578,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             8
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -1476,12 +1592,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             158
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -1490,39 +1606,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             2:06
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/8b0ffffe73ff5ba8bc187516b468777969d7a843?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/8b0ffffe73ff5ba8bc187516b468777969d7a843?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -1532,7 +1652,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -1543,13 +1663,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -1580,7 +1700,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            59
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1589,12 +1715,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             10
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -1603,12 +1729,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             126
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -1617,39 +1743,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             2:49
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/cae754ea79705b7161191ac772f5e928985ce503?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/cae754ea79705b7161191ac772f5e928985ce503?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -1659,7 +1789,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -1670,13 +1800,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -1707,7 +1837,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            61
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1716,12 +1852,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             0
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -1730,12 +1866,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             96
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -1744,39 +1880,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             3:15
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/afeda9ff0372750cbe04b37a53bab11c40fc604d?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/afeda9ff0372750cbe04b37a53bab11c40fc604d?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -1786,7 +1926,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -1797,13 +1937,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -1834,7 +1974,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            15
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1843,12 +1989,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             1
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -1857,12 +2003,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             67
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -1871,39 +2017,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             4:06
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/2e1d8d5329425fb39b10274925eceeab840bfd92?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/2e1d8d5329425fb39b10274925eceeab840bfd92?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -1913,7 +2063,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -1924,13 +2074,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -1961,7 +2111,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            18
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -1970,12 +2126,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             6
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -1984,12 +2140,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             69
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -1998,39 +2154,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             2:41
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/70cc9f6a94b84d857cd1e9c7931053f3246396c2?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/70cc9f6a94b84d857cd1e9c7931053f3246396c2?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -2040,7 +2200,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -2051,13 +2211,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -2088,7 +2248,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            15
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -2097,12 +2263,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             1
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -2111,12 +2277,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             72
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -2125,39 +2291,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             3:26
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/fdfcac5f467dd8fb75c9ed18ceb09a62b143ea07?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/fdfcac5f467dd8fb75c9ed18ceb09a62b143ea07?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -2167,7 +2337,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -2178,13 +2348,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -2215,7 +2385,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            15
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -2224,12 +2400,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             1
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -2238,12 +2414,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             77
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -2252,39 +2428,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             4:18
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/1f58285a10d8020a64bf8328e67807fa44819963?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/1f58285a10d8020a64bf8328e67807fa44819963?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -2294,7 +2474,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -2305,13 +2485,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -2342,7 +2522,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            14
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -2351,12 +2537,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             1
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -2365,12 +2551,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             75
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -2379,39 +2565,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             11:04
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/6ebc0c7a15a6a59745ba9bf4d742ff0e95db79bb?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/6ebc0c7a15a6a59745ba9bf4d742ff0e95db79bb?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>
@@ -2421,7 +2611,7 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
   >
     <div>
       <div
-        className="col-md-6 col-xs-12"
+        className="i-frame-container col-md-6 col-sm-12 col-xs-12"
       >
         <iframe
           allowTransparency="true"
@@ -2432,13 +2622,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
         />
       </div>
       <div
-        className="song-data-wrapper col-md-6 col-xs-12"
+        className="song-data-wrapper col-md-6 col-sm-12 col-xs-12"
       >
         <div
-          className="pie-chart-container col-md-2 col-xs-2 pull-right"
+          className="pie-chart-container col-md-2 col-sm-2 col-xs-2 pull-right"
         >
           <div
-            className="pie-chart"
+            className="pie-chart hidden-sm hidden-xs"
           >
             <ReactMinimalPieChart
               animate={true}
@@ -2469,7 +2659,13 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
             />
           </div>
           <span
-            className="col-md-12 pie-chart-label"
+            className="hidden-md hidden-lg col-sm-12 col-xs-12 bpm-number"
+          >
+            59
+            %
+          </span>
+          <span
+            className="col-md-12 col-sm-12 col-xs-12 pie-chart-label"
           >
             popularity
           </span>
@@ -2478,12 +2674,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right key-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             2
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             key
           </span>
@@ -2492,12 +2688,12 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right bpm-container"
         >
           <span
-            className="col-md-12 bpm-number"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-number"
           >
             127
           </span>
           <span
-            className="col-md-12 bpm-label"
+            className="col-md-12 col-sm-12 col-xs-12 bpm-label"
           >
             BPM
           </span>
@@ -2506,39 +2702,43 @@ exports[`TrackList testing with shallow wrapper matches snapshot 1`] = `
           className="col-md-3 col-xs-3 pull-right duration-container"
         >
           <span
-            className="col-md-12 duration-number"
+            className="col-md-12 col-sm-12 col-xs-12 duration-number"
           >
             2:14
           </span>
           <span
-            className="col-md-12 duration-label"
+            className="col-md-12 col-sm-12 col-xs-12 duration-label"
           >
             duration
           </span>
         </div>
         <div
-          className="col-md-1 col-xs-1"
+          className="col-md-1 hidden-sm hidden-xs"
         />
       </div>
     </div>
     <div>
       <div
-        className="col-md-12 col-sm-12 audio-preview-wrapper"
+        className="col-md-6 col-sm-12 col-xs-12 audio-preview-wrapper"
       >
         <span
-          className="preview-track"
+          className="col-md-2 col-lg-2 preview-track"
         >
           Preview
         </span>
-        <audio
-          controls={true}
+        <div
+          className="col-md-10 col-lg-10 audio-preview"
         >
-          <source
-            src="https://p.scdn.co/mp3-preview/268b25055b2d34ef8e8f985a93f2c54b9a53ef84?cid=fedf859105a2482d8cfb9c2347a9305c"
-            type="audio/mp3"
-          />
-          Your browser does not support the audio element.
-        </audio>
+          <audio
+            controls={true}
+          >
+            <source
+              src="https://p.scdn.co/mp3-preview/268b25055b2d34ef8e8f985a93f2c54b9a53ef84?cid=fedf859105a2482d8cfb9c2347a9305c"
+              type="audio/mp3"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
     </div>
   </div>

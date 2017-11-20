@@ -17,9 +17,7 @@ exports[`HomePage matches snapshot 1`] = `
       replace={false}
       to="/search"
     >
-      <span>
-        Enter
-      </span>
+      Enter
     </Link>
   </div>
 </div>

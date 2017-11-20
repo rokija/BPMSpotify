@@ -23,6 +23,9 @@ body {
     top: 0;
     left: 0;
     transform: scale(1.2);
+    @media screen and (max-width: 900px) {
+      position: fixed;
+    }
   }
   .login-button-label-wrapper {
     position: absolute;
@@ -55,17 +58,17 @@ body {
     .login-button:focus {
       outline: none;
     }
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1000px) {
       h2 {
-        font-size: 60px;
+        display: none;
       }
       .spotify-icon-black {
         width: 250px;
         height: 100px;
       }
       .login-button {
-          font-size: 25px;
-          padding: 45px 20px;
+        font-size: 20px;
+        padding: 35px 18px;
       }
     }
   }
@@ -93,11 +96,14 @@ body {
   .before-tracklist {
     font-size: 35px;
     font-family: @primary_font;
+    @media screen and (max-width: 700px) {
+      font-size: 30px;
+    }
   }
 }
 
 .home-page-wrapper {
-  position: absolute;
+  position: fixed;
   background-image: url("../assets/brandon-zack-425780.jpg");
   background-repeat: repeat;
   background-size: cover;
@@ -107,30 +113,28 @@ body {
 }
 
 .link-to-search-page-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
   .home-page-title {
     font-family: @primary_font;
-    font-size: 50px;
-    text-align: center;
+    font-size: 40px;
     color: white;
-    margin-top: 2em;
+    margin-bottom: 2em;
+    @media screen and (max-width: 700px) {
+      font-size: 30px;
+    }
   }
   .link-to-search-page {
-    margin-top: 7em;
-    margin-left: 45%;
+    padding: 30px 19px;
     color: white;
     background-color: rgba(171, 216, 192, 0.52);
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    position: absolute;
-    span {
-      position: relative;
-      top: 2em;
-      font-size: 20px;
-      left: 1.4em;
-      font-weight: 400;
-      font-family: @primary_font;
-    }
+    border-radius: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: @primary_font;
   }
   .link-to-search-page:hover {
     text-decoration: none;
@@ -151,8 +155,11 @@ body {
 .search-bar-wrapper {
   margin-bottom: 10em;
   .search-input-wrapper {
-    width: 107%;
+    width: 109%;
     padding: 0;
+    @media screen and (max-width: 500px) {
+      width: 105%;
+    }
   }
 }
 
@@ -202,20 +209,46 @@ body {
   &:hover {
     background-color: @gray_hover;
   }
+  @media screen and (max-width: 900px) {
+    padding: 1em;
+  }
 }
 
 .key-container,
 .bpm-container,
-.duration-container {
-  margin-top: 2em;
-}
+.duration-container,
 .pie-chart-container {
   margin-top: 2em;
+  @media screen and (max-width: 900px) {
+    left: -5em;
+  }
+  @media screen and (max-width: 700px) {
+    left: -2em;
+    padding: 0;
+  }
+}
+
+.pie-chart-container {
   .pie-chart {
-    margin-top: -15px;
-    margin-bottom: 15px;
-    .pie-chart-label {
-      left: -15px;
+    @media screen and (min-width: 1355px) {
+      margin-top: -12px;
+      margin-bottom: 15px;
+    }
+  }
+  .pie-chart-label {
+    margin-top: 2em;
+    font-size: 20px;
+    font-family: @primary_font;
+    @media screen and (min-width: 1355px) {
+      margin-top: 10px;
+      margin-left: -15px;
+    }
+    @media screen and (min-width: 900px) {
+      margin-left: -25px;
+    }
+    @media screen and (max-width: 700px) {
+      margin-top: 1em;
+      font-size: 10px;
     }
   }
 }
@@ -223,27 +256,48 @@ body {
 .bpm-label,
 .duration-label {
   margin-top: 2em;
+  font-size: 20px;
+  font-family: @primary_font;
+  @media screen and (max-width: 700px) {
+    margin-top: 1em;
+    font-size: 10px;
+  }
 }
 
 .bpm-number,
 .duration-number {
   font-size: 30px;
+  font-family: @primary_font;
+  @media screen and (max-width: 700px) {
+    font-size: 20px;
+  }
 }
+
 .preview-track {
+  padding: 0;
   display: block;
   float: left;
   font-family: @primary_font;
-  margin-top: 5px;
-  margin-right: 5px;
   font-size: 15px;
 }
 
+.i-frame-container {
+  iframe {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
 .audio-preview-wrapper {
-  audio {
-    height: 25px;
+  .audio-preview {
+    padding: 0;
+    audio {
+      height: 25px;
+      width: 100%;
+    }
   }
   @media screen and (max-width: 900px) {
-    audio, .preview-track {
+    .audio-preview, .preview-track {
       display: none;
     }
   }
@@ -259,18 +313,31 @@ body {
 
 .arrow-up {
   position: fixed;
-  left: 45%;
-  top: 30%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   font-size: 100px;
   color: @base-green;
   -webkit-animation:slide 4s infinite;
   -moz-animation:slide 4s infinite;
   animation:slide 4s infinite;
   @media screen and (max-width: 1367px) {
-    top: 15%;
+    top: 20%;
+  }
+  @media screen and (max-width: 1023px) {
+    top: 30%;
   }
   @media screen and (max-width: 900px) {
-    top: 25%;
+    top: 23%;
+  }
+  @media screen and (max-width: 700px) {
+    top: 60%;
+  }
+  @media screen and (max-width: 600px) {
+    top: 40%;
+  }
+  @media screen and (max-width: 360px) {
+    top: 50%;
   }
 }
 
