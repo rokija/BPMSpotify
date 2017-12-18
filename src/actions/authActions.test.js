@@ -37,12 +37,31 @@ describe('authActions', () => {
     it('should call function getAuth with login success', () => {
         expect(typeof (actions.getAuth())).toEqual("function");
 
+        const url = 'test.url';
+        const login = new Promise((resolve) => {
+            resolve(url);
+        });
+
         const dispatch = jest.fn();
         const expected = {
-            payload: "https://accounts.spotify.com/en/authorize?response_type=token&client_id=fedf859105a2482d8cfb9c2347a9305c&redirect_uri=https%3A%2F%2Fspotify-song-data.firebaseapp.com%2Fcallback&scope=user-follow-modify%20user-follow-read%20user-library-read%20user-top-read%20user-read-private%20user-read-email",
+            payload: url,
             type: types.LOG_IN_SUCCESS
         };
-        return actions.getAuth()(dispatch).then(() => {
+        return actions.getAuthResponse(login)(dispatch).then(() => {
+            expect(dispatch).toBeCalledWith(expected);
+        });
+    });
+
+    it('should call function getAuth with login error', () => {
+        const login = new Promise((resolve, reject) => {
+            reject('error');
+        });
+        const dispatch = jest.fn();
+        const expected = {
+            payload: 'error',
+            type: types.LOG_IN_ERROR
+        };
+        return actions.getAuthResponse(login)(dispatch).then(() => {
             expect(dispatch).toBeCalledWith(expected);
         });
     });

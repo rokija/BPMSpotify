@@ -15,12 +15,13 @@ const minProps ={
 
 describe('SearchBar', () => {
     const wrapper = mount(<SearchBar {...minProps} />, { context });
+    const wrapperInstance = wrapper.instance();
 
     it('renders properly', () => {
         expect(wrapper.length).toEqual(1);
     });
 
-    it('calls typeof mapDispatchToProps', () => {
+    it.skip('calls typeof mapDispatchToProps', () => {
         expect(typeof (mapDispatchToProps())).toEqual("object");
     });
 
@@ -31,13 +32,14 @@ describe('SearchBar', () => {
     });
 
     describe('simulating events', () => {
-
-        it('calls onInputChange', () => {
+        it('calls onInputChange and add input value to the state', () => {
             wrapper.find('input').simulate('change', { target: { value: 'some value' } });
+            expect(wrapper.state().term).toEqual('some value');
         });
 
-        it('calls onFormSubmit', () => {
-            wrapper.find('button').simulate('click');
+        it('calls onFormSubmit and clears the state for term', () => {
+            wrapper.find('button').simulate('click', {preventDefault: () => {}});
+            expect(wrapper.state().term).toEqual('');
         });
     });
 

@@ -1,75 +1,68 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { LoginPage, mapDispatchToProps, mapStateToProps } from './LoginPage';
-
-
-const context = { router: { history: [] }  };
+import { LoginPage, calculateBackgroundPosition, mapStateToProps } from './LoginPage';
 
 describe('LoginPage if user is Logged in', () => {
     const minProps = {
         dispatch: jest.fn(),
-        authReducer: { isLogged: true }
+        authReducer: { isLogged: true },
+        goHome: jest.fn(),
+        goLoginPage: jest.fn()
     };
 
-    const wrapper = mount(<LoginPage {...minProps} />, { context });
+    const wrapper = mount(<LoginPage {...minProps} />);
 
     it('renders properly', () => {
         expect(wrapper.length).toEqual(1);
+    });
+
+    it('matches snapshot', () => {
+        expect(toJson(wrapper)).toMatchSnapshot();
     });
 });
 
 describe('LoginPage if user is not Logged in', () => {
     const minProps = {
         dispatch: jest.fn(),
-        authReducer: { isLogged: false }
+        authReducer: { isLogged: false },
+        goHome: jest.fn(),
+        goLoginPage: jest.fn(),
+        getAuth: jest.fn(),
     };
 
-    const wrapper = mount(<LoginPage {...minProps} />, { context });
+    const wrapper = mount(<LoginPage {...minProps} />);
+    const wrapperInstance = wrapper.instance();
 
     it('renders properly', () => {
         expect(wrapper.length).toEqual(1);
     });
 
-    it('calls logIn function', () => {
-        wrapper.find('button').simulate('click');
-    });
-
-    it('calls function mouseOverAnimation', () => {
+    it('calls mouseOverAnimation', () => {
         global.window.innerWidth = 1800;
+        const spy = jest.spyOn(wrapperInstance, 'mouseOverAnimation');
         wrapper.find('.background-image-login-page').simulate('mousemove');
         wrapper.find('.login-button-label-wrapper').simulate('mousemove');
-        const e = {
-            clientX: 527,
-            clientY: 370
-        };
-        expect(wrapper.instance().mouseOverAnimation(e)).toEqual(true);
+        expect(spy).toHaveBeenCalled();
     });
 
+    it('calls calculateBackgroundPosition function with arguments', () => {
+        expect(calculateBackgroundPosition({ clientX: 10, clientY: 10 },55,55)).toEqual({x: -12.5, y: -17.5});
+    });
+
+    it('calls getAuth action', () => {
+        wrapper.find('button').simulate('click');
+        expect(minProps.getAuth).toHaveBeenCalled();
+    });
 
     it('calls mapStateToProps', () => {
-        expect(mapStateToProps({authReducer: { isLogged: true }})).toEqual({"authReducer": {"isLogged": true}});
+        expect(mapStateToProps({authReducer: { isLogged: true }})).toEqual({authReducer: {isLogged: true}});
     });
 
-    it('calls typeof mapDispatchToProps', () => {
-        expect(typeof (mapDispatchToProps())).toEqual("object");
-    });
-});
-
-describe('LoginPage with shallow wrapper', () => {
-    const minProps = {
-        dispatch: jest.fn(),
-        authReducer: { isLogged: false }
-    };
-
-    const wrapper = shallow(<LoginPage {...minProps} />, { context });
-    const wrapperInstance = wrapper.instance();
-
-    it('calls logIn', () => {
-        expect(wrapperInstance.logIn()).toEqual(true);
-    });
-
-    it('matches snapshot', () => {
-        expect(toJson(wrapper)).toMatchSnapshot();
+    it('calls componentWillMount', () => {
+        wrapper.unmount();
+        jest.spyOn(LoginPage.prototype, 'componentWillMount');
+        mount(<LoginPage {...minProps}/>);
+        expect(LoginPage.prototype.componentWillMount).toHaveBeenCalled();
     });
 });

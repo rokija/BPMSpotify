@@ -1,29 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginPage with shallow wrapper matches snapshot 1`] = `
-<div
-  className="login-page-wrapper"
+exports[`LoginPage if user is Logged in matches snapshot 1`] = `
+<LoginPage
+  authReducer={
+    Object {
+      "isLogged": true,
+    }
+  }
+  dispatch={[Function]}
+  goHome={[Function]}
+  goLoginPage={[Function]}
 >
   <div
-    className="background-image-login-page"
-    onMouseMove={[Function]}
-  />
-  <div
-    className="login-button-label-wrapper"
-    onMouseMove={[Function]}
+    className="login-page-wrapper"
   >
-    <h2>
-      Please Log in with
-    </h2>
     <div
-      className="spotify-icon-black"
+      className="background-image-login-page"
+      onMouseMove={[Function]}
+      style={
+        Object {
+          "transform": "translate(0px, 0px) scale(1.2)",
+        }
+      }
     />
-    <button
-      className="login-button"
-      onClick={[Function]}
+    <div
+      className="login-button-label-wrapper"
+      onMouseMove={[Function]}
     >
-      Log in
-    </button>
+      <h2>
+        Please Log in with
+      </h2>
+      <div
+        className="spotify-icon-black"
+      />
+      <button
+        className="login-button"
+      >
+        Log in
+      </button>
+    </div>
   </div>
-</div>
+</LoginPage>
 `;
