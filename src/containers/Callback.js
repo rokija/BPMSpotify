@@ -5,7 +5,6 @@ import { bindActionCreators } from "redux";
 import { getAuth, validateCallbackResult } from '../actions/authActions';
 
 export class Callback extends Component {
-
     componentWillMount() {
         const {dispatch} = this.props;
         dispatch(validateCallbackResult(location.hash));
@@ -15,7 +14,6 @@ export class Callback extends Component {
         const {authReducer} = nextProps;
         if(authReducer.isLogged) {
             this.context.router.history.push("/search");
-            return true;
         }
     }
 

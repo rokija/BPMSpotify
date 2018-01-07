@@ -1,65 +1,57 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { push } from 'react-router-redux';
 import PropTypes from "prop-types";
-import { bindActionCreators } from "redux";
 import { getAuth } from '../actions/authActions';
 
-let lFollowX = 0,
-    lFollowY = 0,
-    x = 0,
-    y = 0,
-    friction = 1 / 20;
+export const calculateBackgroundPosition = ({ clientX, clientY },x,y) => {
+    let lMouseX = Math.max(-100, Math.min(100, window.innerWidth / 2 - clientX));
+    let lMouseY = Math.max(-100, Math.min(100, window.innerHeight / 2 - clientY));
+    const lFollowX = (30 * lMouseX) / 100;
+    const lFollowY = (20 * lMouseY) / 100;
+    const friction = 1 / 2;
+
+    const calculatedX = (lFollowX - x) * friction;
+    const calculatedY = (lFollowY - y) * friction;
+
+    return { x: calculatedX, y: calculatedY };
+};
+
+const TABLET_SIZE = 1118;
 
 export class LoginPage extends Component {
-    constructor() {
-        super();
-
-        this.logIn = this.logIn.bind(this);
-    }
+    state = {
+        x: 0,
+        y: 0
+    };
 
     componentWillMount() {
-        const {authReducer } = this.props;
+        const { authReducer, goHome, goLoginPage } = this.props;
         if (authReducer.isLogged) {
-            this.context.router.history.push("/");
+            goHome();
         }
         else {
-            this.context.router.history.push("/login");
+            goLoginPage();
         }
     }
 
-    logIn() {
-        this.props.dispatch(getAuth());
-        return true;
-    }
-
-    mouseOverAnimation(e) {
-        function moveBackground() {
-            x += (lFollowX - x) * friction;
-            y += (lFollowY - y) * friction;
-            const background = document.getElementsByClassName("background-image-login-page")[0];
-            background.style.transform = 'translate(' + x + 'px, ' + y + 'px) scale(1.2)';
-            window.requestAnimationFrame(moveBackground);
+    mouseOverAnimation = (e) => {
+        const { x, y } = this.state;
+        if (window.innerWidth > TABLET_SIZE) {
+            this.setState(calculateBackgroundPosition(e,x,y));
         }
-
-        let lMouseX = Math.max(-100, Math.min(100, window.innerWidth / 2 - e.clientX));
-        let lMouseY = Math.max(-100, Math.min(100, window.innerHeight / 2 - e.clientY));
-        lFollowX = (20 * lMouseX) / 100;
-        lFollowY = (10 * lMouseY) / 100;
-
-        if (window.innerWidth > 1118) {
-            moveBackground();
-            return true;
-        }
-    }
+    };
 
     render() {
+        const { x, y } = this.state;
+        const { getAuth } = this.props;
         return (
             <div className="login-page-wrapper">
-                <div className="background-image-login-page" onMouseMove={(e) => this.mouseOverAnimation(e)} />
-                <div className="login-button-label-wrapper" onMouseMove={(e) => this.mouseOverAnimation(e)}>
+                <div className="background-image-login-page" onMouseMove={this.mouseOverAnimation} style={{ transform: `translate(${x}px, ${y}px) scale(1.2)`}} />
+                <div className="login-button-label-wrapper" onMouseMove={this.mouseOverAnimation}>
                     <h2>Please Log in with</h2>
                     <div className="spotify-icon-black" />
-                    <button className="login-button" onClick={() => this.logIn()}>Log in</button>
+                    <button className="login-button" onClick={getAuth}>Log in</button>
                 </div>
             </div>
         );
@@ -69,24 +61,26 @@ export class LoginPage extends Component {
 LoginPage.propTypes = {
     dispatch: PropTypes.func,
     authReducer: PropTypes.object,
-    userLoginState: PropTypes.object
+    userLoginState: PropTypes.object,
+    getAuth: PropTypes.func,
+    goHome: PropTypes.func,
+    goLoginPage: PropTypes.func,
 };
 
 LoginPage.contextTypes = {
     router: PropTypes.object
 };
 
-export function mapStateToProps (state) {
-    const {authReducer} = state;
-    return {
-        authReducer
-    };
-}
-export function mapDispatchToProps (dispatch) {
-    return {
-        dispatch,
-        actions: bindActionCreators({getAuth}, dispatch)
-    };
-}
+export const mapStateToProps = ({ authReducer }) => ({
+    authReducer,
+});
+
+
+/* istanbul ignore next */
+const mapDispatchToProps = dispatch => ({
+    getAuth: () => dispatch(getAuth()),
+    goHome: () => dispatch(push("/")),
+    goLoginPage: () => dispatch(push("/login")),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);

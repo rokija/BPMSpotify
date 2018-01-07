@@ -16,7 +16,10 @@ client.settings = {
 };
 
 export function getAuth() {
-    let request = client.login();
+    return getAuthResponse(client.login());
+}
+
+export function getAuthResponse(request) {
     return (dispatch) => {
         return request.then((url) => {
             dispatch(logInSuccess(url, types.LOG_IN_SUCCESS));
