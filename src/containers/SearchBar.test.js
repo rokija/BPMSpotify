@@ -15,13 +15,18 @@ const minProps ={
 
 describe('SearchBar', () => {
     const wrapper = mount(<SearchBar {...minProps} />, { context });
-    const wrapperInstance = wrapper.instance();
+
+    it('by calling method calls callback with provided value', () => {
+        wrapper.instance().callback = jest.fn();
+        wrapper.instance().method(3);
+        expect(wrapper.instance().callback).toBeCalledWith(3);
+    });
 
     it('renders properly', () => {
         expect(wrapper.length).toEqual(1);
     });
 
-    it.skip('calls typeof mapDispatchToProps', () => {
+    it('calls typeof mapDispatchToProps', () => {
         expect(typeof (mapDispatchToProps())).toEqual("object");
     });
 

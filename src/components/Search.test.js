@@ -1,10 +1,18 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Search from './Search';
 
+jest.mock('../containers/SearchBar');
+jest.mock('../containers/TrackList');
+
+jest.mock('./BeforeTrackList', () => {
+    const BeforeTrackList = () => <div />;
+    return BeforeTrackList;
+});
+
 describe('Search', () => {
-    const wrapper = shallow(<Search />);
+    const wrapper = mount(<Search />);
 
     it('renders properly', () => {
         expect(wrapper.length).toEqual(1);

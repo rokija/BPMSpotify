@@ -1,12 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search matches snapshot 1`] = `
-<div
-  className="search-page"
->
-  <Connect(SearchBar)
-    setSearchQuery={[Function]}
-  />
-  <BeforeTrackList />
-</div>
+<Search>
+  <div
+    className="search-page"
+  >
+    <Connect(SearchBar)
+      setSearchQuery={[Function]}
+    />
+    <BeforeTrackList>
+      <div />
+    </BeforeTrackList>
+  </div>
+</Search>
 `;

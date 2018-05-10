@@ -6,6 +6,7 @@ import { getSearchResults } from '../actions/searchActions';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
+
 export class SearchBar extends Component {
     constructor() {
         super();
@@ -46,6 +47,14 @@ export class SearchBar extends Component {
         else {
             this.setState({ errorMessage: 'please write a song or an artist name in the search box' });
         }
+    }
+
+    callback(val) {
+        return val + 2;
+    }
+    
+    method(val) {
+        this.callback(val);
     }
 
     render() {

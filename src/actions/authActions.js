@@ -12,7 +12,7 @@ client.settings = {
     response_type: 'code',
     secretId: 'b0e450f938b144a9a21d6d1c3f5ec326',
     scopes: ['user-follow-modify user-follow-read user-library-read user-top-read user-read-private user-read-email'],
-    redirect_uri: 'https://spotify-song-data.firebaseapp.com/callback'
+    redirect_uri: 'http://localhost:3000/callback'
 };
 
 export function getAuth() {
