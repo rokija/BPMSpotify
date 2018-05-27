@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { getSearchResults } from '../actions/searchActions';
+import Child from './Child';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
@@ -72,6 +73,7 @@ export class SearchBar extends Component {
                         type="submit" />
                 </form>
                 <span className="col-md-12 col-xs-12 error-message-input">{this.state.errorMessage}</span>
+                <Child />
             </div>
         );
     }

@@ -14,7 +14,7 @@ const minProps ={
 };
 
 describe('SearchBar', () => {
-    const wrapper = mount(<SearchBar {...minProps} />, { context });
+    const wrapper = shallow(<SearchBar {...minProps} />, { context });
 
     it('by calling method calls callback with provided value', () => {
         wrapper.instance().callback = jest.fn();
@@ -49,7 +49,7 @@ describe('SearchBar', () => {
     });
 
     describe('testing methods', () => {
-        const wrapper = shallow(<SearchBar {...minProps} />, { context });
+        const wrapper = mount(<SearchBar {...minProps} />, { context });
         const wrapperInstance = wrapper.instance();
 
         it('calls onInputChange', () => {

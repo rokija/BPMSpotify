@@ -15,7 +15,8 @@
   "scripts": {
     "test": "jest",
     "test:cover": "npm run test -- --coverage",
-    "test:watch": "jest --watch",
+    "test-watch": "jest --watch",
+    "test-watchAll": "jest --watchAll --silent",
     "start": "npm-run-all --parallel test:watch open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",

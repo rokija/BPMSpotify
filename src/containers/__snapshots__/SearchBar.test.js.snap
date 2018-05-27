@@ -1,26 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchBar testing methods matches snapshot 1`] = `
-<div
-  className="search-bar-wrapper"
+<SearchBar
+  getSearchResults={[Function]}
+  setSearchQuery={[Function]}
 >
-  <form
-    className="col-md-12 col-xs-12 search-input-wrapper"
+  <div
+    className="search-bar-wrapper"
   >
-    <input
-      className="search-input"
-      onChange={[Function]}
-      placeholder="Search a song"
-      value=""
+    <form
+      className="col-md-12 col-xs-12 search-input-wrapper"
+    >
+      <input
+        className="search-input"
+        onChange={[Function]}
+        placeholder="Search a song"
+        value=""
+      />
+      <button
+        className="search-button btn glyphicon glyphicon-search"
+        onClick={[Function]}
+        type="submit"
+      />
+    </form>
+    <span
+      className="col-md-12 col-xs-12 error-message-input"
     />
-    <button
-      className="search-button btn glyphicon glyphicon-search"
-      onClick={[Function]}
-      type="submit"
-    />
-  </form>
-  <span
-    className="col-md-12 col-xs-12 error-message-input"
-  />
-</div>
+    <Child>
+      <div>
+        <h2>
+          CHILD
+        </h2>
+      </div>
+    </Child>
+  </div>
+</SearchBar>
 `;
