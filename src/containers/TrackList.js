@@ -6,15 +6,11 @@ import PieChart from 'react-minimal-pie-chart';
 import { getAudioFeatures } from '../actions/audioActions';
 
 export class TrackList extends Component {
-    constructor() {
-        super();
-
-        this.state = {
-            searchQuery: '',
-            searchResults: [],
-            searchResultIds: []
-        };
-    }
+    state = {
+        searchQuery: '',
+        searchResults: [],
+        searchResultIds: []
+    };
 
     componentWillReceiveProps(nextProps){
         const {dispatch, search, searchQuery} = nextProps;

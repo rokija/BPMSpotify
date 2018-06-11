@@ -7,9 +7,21 @@ exports[`LoginPage if user is Logged in matches snapshot 1`] = `
       "isLogged": true,
     }
   }
-  dispatch={[Function]}
-  goHome={[Function]}
-  goLoginPage={[Function]}
+  dispatch={[MockFunction]}
+  goHome={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  goLoginPage={[MockFunction]}
 >
   <div
     className="login-page-wrapper"

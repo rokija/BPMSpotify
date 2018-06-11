@@ -2,8 +2,50 @@
 
 exports[`SearchBar testing methods matches snapshot 1`] = `
 <SearchBar
-  getSearchResults={[Function]}
-  setSearchQuery={[Function]}
+  getSearchResults={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "some value",
+        ],
+        Array [
+          "value",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  setSearchQuery={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "some value",
+        ],
+        Array [
+          "value",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    }
+  }
 >
   <div
     className="search-bar-wrapper"
@@ -26,13 +68,6 @@ exports[`SearchBar testing methods matches snapshot 1`] = `
     <span
       className="col-md-12 col-xs-12 error-message-input"
     />
-    <Child>
-      <div>
-        <h2>
-          CHILD
-        </h2>
-      </div>
-    </Child>
   </div>
 </SearchBar>
 `;

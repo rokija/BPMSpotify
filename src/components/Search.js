@@ -4,20 +4,11 @@ import TrackList from '../containers/TrackList';
 import BeforeTrackList from './BeforeTrackList';
 
 export default class Search extends Component {
-    constructor(){
-        super();
+    state = {
+        searchQuery: ''
+    };
 
-        this.setSearchQuery = this.setSearchQuery.bind(this);
-        this.state = {
-            searchQuery: ''
-        };
-    }
-
-    setSearchQuery (searchQueryValue) {
-        this.setState({
-            searchQuery: searchQueryValue
-        });
-    }
+    setSearchQuery = searchQueryValue => this.setState({ searchQuery: searchQueryValue });
 
     render() {
         return (

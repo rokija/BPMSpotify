@@ -413,7 +413,21 @@ exports[`TrackList matches snapshot 1`] = `
       "isLogged": true,
     }
   }
-  dispatch={[Function]}
+  dispatch={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          [Function],
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    }
+  }
   search={
     Object {
       "artists": Object {

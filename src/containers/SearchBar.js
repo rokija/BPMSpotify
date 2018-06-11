@@ -3,23 +3,15 @@ import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { getSearchResults } from '../actions/searchActions';
-import Child from './Child';
+// import Child from './Child';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
-
 export class SearchBar extends Component {
-    constructor() {
-        super();
-
-        this.state = {
-            term: '',
-            errorMessage: ''
-        };
-
-        this.onInputChange = this.onInputChange.bind(this);
-        this.onFormSubmit = this.onFormSubmit.bind(this);
-    }
+    state = {
+        term: '',
+        errorMessage: ''
+    };
 
     componentWillMount() {
         const tokenData = cookies.get('token');
@@ -32,11 +24,9 @@ export class SearchBar extends Component {
         }
     }
 
-    onInputChange(event) {
-        this.setState({ term: event.target.value, errorMessage: '' });
-    }
+    onInputChange = event => this.setState({ term: event.target.value, errorMessage: '' });
 
-    onFormSubmit(event) {
+    onFormSubmit = (event) => {
         const {getSearchResults, setSearchQuery} = this.props;
         event.preventDefault();
 
@@ -50,13 +40,9 @@ export class SearchBar extends Component {
         }
     }
 
-    callback(val) {
-        return val + 2;
-    }
+    callback = val => val + 2;
     
-    method(val) {
-        this.callback(val);
-    }
+    method = val => this.callback(val);
 
     render() {
         return (
@@ -73,7 +59,7 @@ export class SearchBar extends Component {
                         type="submit" />
                 </form>
                 <span className="col-md-12 col-xs-12 error-message-input">{this.state.errorMessage}</span>
-                <Child />
+                {/* <Child /> */}
             </div>
         );
     }
@@ -90,8 +76,6 @@ SearchBar.contextTypes = {
     router: PropTypes.object
 };
 
-export function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ getSearchResults }, dispatch);
-}
+export const mapDispatchToProps = (dispatch) => bindActionCreators({ getSearchResults }, dispatch);
 
 export default connect(null, mapDispatchToProps)(SearchBar);
